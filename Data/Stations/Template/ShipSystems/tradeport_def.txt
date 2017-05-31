@@ -1,0 +1,33 @@
+txt
+ShipSystem:	LIGHTWEAPONS	SWLTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWHTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWQTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWMTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWSBIC
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWSBQTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWFL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	SWLTHL
+{
+	Producing:	4
+}

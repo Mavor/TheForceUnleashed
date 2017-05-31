@@ -1,0 +1,13 @@
+ModelName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\em_Titan_derelict.asb
+Name:	Derelict
+CargoValue:	6000
+LootDrop:	0
+Enable:	1
+Events:	
+{	
+	OnDestroy:	Data\Scripts\DerelictOnDestroy.sal
+	OnSalvage:	Data\Scripts\DerelictOnSalvage.sal
+	OnEnter:	Data\Scripts\DerelictOnEnter.sal
+	OnExit:	Data\Scripts\DerelictOnExit.sal
+	OnScan:	Data\Scripts\DerelictOnScan.sal
+}	

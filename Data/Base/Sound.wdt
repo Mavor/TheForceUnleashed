@@ -1,0 +1,10 @@
+Colum:	11									
+Id	KeyName	Type	Name	File	Loop	MaxBuffers	DisMin	DistMax	3D	OneGlobalSound
+500	SW_LTL1	0	Lightturbo1A	Mods\TheForceUnleashed\Data\Sound\Effects\sw_LTL_01.wav	0	4	100	1300	1	0
+501	SW_HTL1	0	Heavyturbo1A	Mods\TheForceUnleashed\Data\Sound\Effects\sw_HTL_01.wav	0	4	100	1300	1	0
+502	SW_QTL1	0	Quadturbo1A	Mods\TheForceUnleashed\Data\Sound\Effects\sw_QTL_01.wav	0	4	100	1300	1	0
+503	SW_IC1	0	Ioncannon1A	Mods\TheForceUnleashed\Data\Sound\Effects\sw_IC_01.wav	0	4	100	1300	1	0
+504	SW_IC2	0	Ioncannon1B	Mods\TheForceUnleashed\Data\Sound\Effects\sw_IC_02.wav	0	4	100	1300	1	0
+505	SW_IC3	0	Ioncannon1C	Mods\TheForceUnleashed\Data\Sound\Effects\sw_IC_03.wav	0	4	100	1300	1	0
+506	SW_FL	0	Flaklaser1A	Mods\TheForceUnleashed\Data\Sound\Effects\sw_FL_01.wav	0	4	100	1300	1	0
+507	SWTest	0	SWQuadtest	Mods\TheForceUnleashed\Data\Sound\Effects\sw_QTL_01.wav	0	4	100	1300	1	0

@@ -1,0 +1,30 @@
+SpaceSort:	2
+BlendSort:	1
+Permanent:	0
+StartPositionOffsetSort:	1
+StartPositionOffsetLocal:	0
+StartPositionOffsetMeshId:	-1
+StartPosOffset:	0.00	0.00	0.00
+StartPositionOffsetParamA:	0.00	0.00	0.00	0.00
+StartPositionOffsetParamB:	0.00	0.00	0.00	0.00
+StartPositionOffsetRotation:	0.00	0.00	0.00	0.00
+StartVelMin:	0.00	0.00	0.00
+StartVelMax:	0.00	0.00	0.00
+Angle:	0.00
+AngleOffset:	6.28
+AngleVel:	0.00
+AngleVelAlign:	0
+Gravity:	0.00	0.00	0.00
+GravityRandom:	0.00
+EmiterGravity:	0.00
+EmissionTime:	0.40
+EmissionRand:	0.00
+EmissionCount:	1
+LifeTime:	0.30
+LifeTimeRandom:	0.00
+PatchSizeOffset:	0.00
+PatchSort:	0
+Glow:	1.00
+Size:	2	0.10	0.30	0.30	0.30	0.50	0.50
+Color:	3	0.00	0.65	1.05	2.55	0.00	0.08	0.65	1.05	2.25	2.00	0.15	0.65	1.05	2.55	2.00
+Patch:	1	65

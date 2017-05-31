@@ -1,0 +1,21 @@
+Size:	1	0.0	0.20	0.20
+Color:	1	0.0	1	1	1	1	0.3	1	1	1	0
+StartPosOffset:	0.00	0.00	0.00
+StartVelMin:	-2.50	-2.50	-2.50
+StartVelMax:	2.50	2.50	2.50
+PatchSizeOffset:	0.00
+Angle:	0.00
+AngleOffset:	6.28
+AngleVel:	0.30
+Gravity:	0.00	0.00	0.00
+GravityRandom:	0.00
+EmissionTime:	0.05
+EmissionRand:	0.00
+EmissionCount:	3
+LifeTime:	0.30
+LifeTimeRandom:	0.00
+Patch:	3	93	94	95
+Permanent:	0
+StartPositionOffsetSort:	0
+SpaceSort:	2
+BlendSort:	1

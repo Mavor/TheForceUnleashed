@@ -1,0 +1,19 @@
+Sort:	1
+Lenght:	10.0
+Speed:	520
+BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalLTL\1\FractalLTLBeam.par
+
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalLTL\1\FractalLTL.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+CentralY:	0
+Duration:	1.0
+
+Sound:
+{
+	Shot:	Lightturbo1A	
+}

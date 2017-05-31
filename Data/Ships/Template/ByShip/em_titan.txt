@@ -1,0 +1,70 @@
+txt
+Model:	EMTITAN
+Faction:	CONCORD
+Profession:	Security
+Hull:	250000.00
+Crew:	250
+Skills:	2
+Level:	20
+CombatAI:	0
+LootDrop:	0
+CargoValue:	500
+Veteran:	0
+CustomBannersId:	0
+CustomColorBanners:	1.00	0.64	0.05	1.00
+CustomColorName:	1.00	0.64	0.05	1.00
+CustomFontName:	0
+CustomColorDecals:	1.00	0.64	0.05	1.00
+CustomPaintTint:	1.00	1.00	1.00	1.00
+CustomGlossiness:	1.00
+CustomReflection:	0.00
+CustomGlossinessSize:	0.50
+PrimaryWeapons:	
+{	
+	Battery:	
+	{	
+		Sort:	0
+		Turrets:	0
+		Weapon:	0
+	}	
+	Battery:	
+	{	
+		Sort:	1
+		Turrets:	0
+		Weapon:	0
+	}	
+	Battery:	
+	{	
+		Sort:	2
+		Turrets:	3
+		Weapon:	8
+	}	
+	Battery:	
+	{	
+		Sort:	3
+		Turrets:	0
+		Weapon:	0
+	}	
+}	
+SecundaryWeapons:	
+{	
+	Launcher:	
+	{	
+		Sort:	2
+		Weapon:	11
+		Ammo:	8
+	}	
+}	
+Hangar:	
+{	
+}
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnHail:	Data\Scripts\ShipDefault\OnHail.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}		

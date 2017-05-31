@@ -1,0 +1,19 @@
+Sort:	1
+Lenght:	15.0
+Speed:	500
+BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalSBQTL\FractalSBQTLBeam.par
+
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalSBQTL\FractalSBQTL.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+CentralY:	0
+Duration:	1.0
+
+Sound:
+{
+	Shot:	Quadturbo1A	
+}

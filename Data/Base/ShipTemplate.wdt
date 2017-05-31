@@ -1,0 +1,5 @@
+Colum:	7					
+Id	KeyName	Path	Name	Constructable	Mark	Warmaster
+1000	EMTITAN	Mods\TheForceUnleashed\Data\Ships\Template\ByShip\em_titan.txt	EMTITAN	0	0	NA
+1001	EMTITAN_MKI	Mods\TheForceUnleashed\Data\Ships\Template\FleetShipTemplates\em_titan_MKI.txt	EMTITAN	1	1	NA
+1002	EMTITAN_MKII	Mods\TheForceUnleashed\Data\Ships\Template\FleetShipTemplates\em_titan_MKII.txt	EMTITAN	1	2	NA

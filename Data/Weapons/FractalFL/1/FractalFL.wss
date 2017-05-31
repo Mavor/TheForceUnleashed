@@ -1,0 +1,19 @@
+Sort:	1
+Lenght:	5.0
+Speed:	540
+BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalFL\1\FractalFLBeam.par
+
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalFL\1\FractalFL.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+CentralY:	0
+Duration:	1.0
+
+Sound:
+{
+	Shot:	Flaklaser1A	
+}
