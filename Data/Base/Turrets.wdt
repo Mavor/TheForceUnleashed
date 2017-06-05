@@ -8,3 +8,6 @@ Id	KeyName	Assembly	Sort
 43	T43	Mods\TheForceUnleashed\Data\Models\Turrets\FracSBQTL\FracSBQTL.asb	2
 44	T44	Mods\TheForceUnleashed\Data\Models\Turrets\FracFL\FracFL.asb	2
 45	T45	Mods\TheForceUnleashed\Data\Models\Turrets\FracLTHL\FracLTHL.asb	2
+1001	T1001	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\TFL_SHTL.asb	2
+1002	T1002	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_QSHTL\TFL_QSHTL.asb	2
+1100	T1100	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_S_SHTL\TFL_S_SHTL.asb	2

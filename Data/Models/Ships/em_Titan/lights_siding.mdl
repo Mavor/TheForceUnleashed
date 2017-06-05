@@ -4,19 +4,19 @@ Material:
 		Shader:	XYZNTUV	data\shaders\pbr\spg_pbr_shader.fx
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\ships\em_titan\ev_titan.dds
+			Name:	mods\theforceunleashed\data\models\ships\em_titan\ev_titan.dds
 			Slot:	0
 			Type:	FromFile
 		}
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\ships\em_titan\ev_titan_b.dds
+			Name:	mods\theforceunleashed\data\models\ships\em_titan\ev_titan_b.dds
 			Slot:	1
 			Type:	FromFile
 		}
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\ships\em_titan\ev_titan_l.dds
+			Name:	mods\theforceunleashed\data\models\ships\em_titan\ev_titan_l.dds
 			Slot:	2
 			Type:	FromFile
 		}
@@ -27,7 +27,7 @@ Material:
 		DiffuseFresnelMult:	0.0000
 		AmbientMultiplier:	2.0000
 		AmbientBias:	0.1500
-		SIMapMult:	3.0500
+		SIMapMult:	4.0500
 		SILevel:	0.0000
 		FresnelPower:	1.0000
 		FresnelBias:	0.7000

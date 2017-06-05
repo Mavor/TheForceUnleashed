@@ -1,0 +1,60 @@
+txt:	
+FrustumRadius:	6.00
+Mobility:	0
+Mass:	1.00
+Hittable:	0
+HitSphereDistance:	1000.00
+HitModelDistance:	1000.00
+AABBUse:	0
+AABBCenter:	0.00	0.00	0.00
+AABBSize:	1.00	1.00	1.00
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\Base.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\Neck.mdl
+	Position:	0.00	0.50	0.07
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\Head.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+Dummy:	
+{	
+	Position:	-0.47	-0.03	0.70
+}	
+Dummy:	
+{	
+	Position:	0.47	-0.03	0.70
+}	
+Waypoints:	
+{	
+	DroneSpawnPosition:	0.00	0.00	0.00
+	DroneScale:	1.00
+	DataFile:	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\TFL_SHTL.mg
+}	

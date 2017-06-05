@@ -1,0 +1,17 @@
+Size:	4	0.10	0.20	0.20	0.60
+StartColor:	3	0.00	1.00	1.00	1.00	0.00	0.50	1.00	1.00	1.00	2.00	1.00	1.00	1.00	1.00	2.00
+EndColor:	3	0.00	1.00	1.00	1.00	0.00	0.50	1.00	1.00	1.00	2.00	1.00	1.00	1.00	1.00	2.00
+EmissionTime:	0.40
+EmissionRand:	0.00
+EmissionCount:	1
+LifeTime:	5.50
+LifeTimeRandom:	0.00
+Patch:	1	39
+PatchSort:	0
+Permanent:	1
+SpaceSort:	0
+TextureSpeed:	0.00
+TextureTileNo:	1.00
+TextureTilePerUnit:	0
+FrameTime:	0.08
+BlendSort:	0

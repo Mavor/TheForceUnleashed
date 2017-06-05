@@ -1,0 +1,4 @@
+int credits = 50000000
+player AddCredits credits ;
+
+End

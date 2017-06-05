@@ -1,0 +1,487 @@
+str keyName = $fleetShipKeyName ;
+scriptparent 2 keyName ;
+
+/* Assign troopers */
+	int trooperNum = 0 ;
+	ship GetParent GetTroopersMax trooperNum ;
+	ship GetParent SetTroopersNo trooperNum ;
+	
+	ship GetParent SetCapturable 0 ;
+	ship GetParent SetBoardable 0 ;
+	
+/* CreateName */
+	ship GetParent SetName RND ;
+	
+/* Full HP */
+	float maxHull = 0.0 ;
+	ship GetParent GetHPMax maxHull ;
+	ship GetParent SetHP maxHull ;
+
+/* Assign Level */
+	int playerLevel ;
+	int level ;
+	int i ;
+	int randomNumber ;
+
+	player GetLevel playerLevel ;
+	level = playerLevel ;
+	
+	/* global level override, for missions etc. */
+	int	lev = $ShipLevelOverride ;
+	if lev != 0
+		level = lev ;
+	endif
+	math level = 2 * level ;
+	
+	/* level buff with power */
+	/* WIP */
+	/* WIP */
+	/* level randomisation */
+	for i = 0 < 3 step 1 
+		math randomNumber = Rnd 0 1 ;
+		if randomNumber == 0 && level > 1
+			math level = level - 1 ;
+		else
+			math level = level + 1 ;
+		endif
+	endfor
+	
+	int levelKeeper = level ;
+	math level = level / 10 ;
+	math level = level + 5 ;
+	math level = level + levelKeeper ;
+	/* Adjust virtual level depending on faction strength */
+	/* if faction weak then level X 0.75 or similar */
+
+/* create weaponId Array */
+	array str weaponArray ;
+	array str heavyWeaponArray ;
+	array str fightersArray ;
+	if level < 10
+		array Add weaponArray WARD1 REM1 N3000_1 NPC1 TESLA1 SBR1 WARD2 N3000_2 REM2 ;
+		array Add heavyWeaponArray MAGNETON MONGOOSE SINGULARITY ;
+	endif
+	if level >= 10 && level < 20
+		array Add weaponArray MELTER1 FLAIL1 DUSTER1 NPC2 TESLA2 SBR2 WARD3 N3000_3 REM3 ;
+		array Add heavyWeaponArray HEPHESTUS REVERY LANCER ;
+	endif
+	if level >= 20 && level < 30
+		array Add weaponArray N6000_1 RAZOR1 SCYTHE1 NPC3 MELTER2 TESLA3 FLAIL2 SBR3 DUSTER2 ;
+		array Add heavyWeaponArray ANDROMEDA BANDICOOT PULVERIZER ;
+		array Add fightersArray COUGAR DELTA ;
+	endif
+	if level >= 30 && level < 40
+		array Add weaponArray MELTER3 VOID1 SPLITTER1 FLAIL3 N6000_2 RAZOR2 RIPPER1 DUSTER3 SCYTHE2 ;
+		array Add heavyWeaponArray CERBERUS HAMMER SENTINEL ;
+		array Add fightersArray COBRA HEDGEHOG ;
+	endif
+	if level >= 40 && level < 50
+		array Add weaponArray N6000_3 RAZOR3 HOPE1 OMEGA1 SCYTHE3 BARRAGE1 VOID2 SPLITTER2 RIPPER2 ;
+		array Add heavyWeaponArray ION_CANNON JACKRABBIT QUASAR ;
+		array Add fightersArray APEX THORN ;
+	endif
+	if level >= 50 && level < 60
+		array Add weaponArray DISPOSER1 FLUX1 TORCH1 BENDER1 PENANCE1 VOID3 SPLITTER3 HOPE2 OMEGA2 ; 
+		array Add heavyWeaponArray GAUSS CORONA BLAZAR ;
+		array Add fightersArray RHINO ELYPSO ;
+	endif
+	if level >= 60 && level < 70
+		/* WIP */
+		array Add weaponArray TORRENT1 RIPPER3 BARRAGE2 ERASER1 SAGE1 HATRED1 DISPOSER2 FLUX2 TORCH2 ;
+		array Add heavyWeaponArray HYPNOS JUDGEMENT NOMAD ;
+		array Add fightersArray TYPHOON MEDIATOR ;
+	endif
+	if level >= 70 && level < 80
+		/* WIP */
+		array Add weaponArray HOPE3 OMEGA3 BARRAGE3 BENDER2 PENANCE2 TORRENT2 ERASER2 SAGE2 DISPOSER3 ;
+		array Add heavyWeaponArray XERXES MOHAWK ICARUS ;
+		array Add fightersArray OMEGA BOSON ;
+	endif
+	if level >= 80
+		/* WIP */
+		array Add weaponArray FLUX3 HATRED2 TORCH3 BENDER3 PENANCE3 TORRENT3 ERASER3 SAGE3 HATRED3 ;
+		array Add heavyWeaponArray ACOLYTE SERAPHEEN POLARIS ;
+		array Add fightersArray LIGHTNING ZOEX ;
+	endif
+
+/* Assign Light weapons */
+int l_battery = 0 ;
+str weaponId = 27 ;
+
+int imin = 0 ;
+int realMin ;
+int realMax ;
+int imax ;
+
+/* set turret numbers 
+	GetWeaponsBattery
+	GetTuretsMax
+	SetTuretsNo
+	*/
+
+	int leftNum = 0 ;
+	int rightNum = 0 ;
+	int frontNum = 0 ;
+	int backNum = 0 ;
+	int virtualLevel = level ;
+	int shipClass ;
+		
+		/* Cruiser+ ship +1 override */
+		ship GetParent GetClass shipClass ;
+		if virtualLevel < 40 && shipClass >= 7
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+			math frontNum = frontNum + 1 ;
+			math backNum = backNum + 1 ;
+		endif 
+	
+	if virtualLevel < 14 
+		if virtualLevel >= 1 
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 2
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 3 
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 5
+			math backNum = backNum + 1 ;
+		endif
+		if virtualLevel >= 7
+			math frontNum = frontNum + 1 ;
+		endif
+	endif
+	/* until now: l1 r1 f3 b1 */
+	
+	if virtualLevel < 36
+		if virtualLevel >= 14
+				/* JUMP */
+				math leftNum = leftNum + 1 ;
+				math rightNum = rightNum + 1 ;
+				math frontNum = frontNum + 3 ;
+				math backNum = backNum + 1 ;
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 16
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		/* until now: l2 r2 f4 b1 */
+		if virtualLevel >= 22
+			math backNum = backNum + 1 ;
+		endif
+		if virtualLevel >= 28
+			math frontNum = frontNum + 1 ;
+		endif
+	endif
+	/* until now: l2 r2 f5 b2 */
+	
+	if virtualLevel < 54
+		if virtualLevel >= 36
+				/* JUMP */
+				math leftNum = leftNum + 2 ;
+				math rightNum = rightNum + 2 ;
+				math frontNum = frontNum + 5 ;
+				math backNum = backNum + 2 ;
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 40
+			math backNum = backNum + 1 ;
+		endif
+		/* until now: l3 r3 f5 b3 */
+		if virtualLevel >= 45
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 47
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 50
+			math backNum = backNum + 1 ;
+		endif
+	endif
+	/* until now: l4 r4 f6 b4 */
+	
+	if virtualLevel < 71
+		if virtualLevel >= 54
+				/* JUMP */
+				math leftNum = leftNum + 4 ;
+				math rightNum = rightNum + 4 ;
+				math frontNum = frontNum + 6 ;
+				math backNum = backNum + 4 ;
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 57
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 59
+			math backNum = backNum + 1 ;
+		endif
+		/* until now: l5 r5 f7 b5 */
+		if virtualLevel >= 62
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 65
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 68
+			math backNum = backNum + 1 ;
+		endif
+	endif
+	/* until now: l6 r6 f8 b6 */
+	
+	if virtualLevel < 82
+		if virtualLevel >= 71
+				/* JUMP */
+				math leftNum = leftNum + 4 ;
+				math rightNum = rightNum + 4 ;
+				math frontNum = frontNum + 6 ;
+				math backNum = backNum + 4 ;
+			math frontNum = frontNum + 1 ;
+		endif
+		if virtualLevel >= 73
+			math leftNum = leftNum + 1 ;
+			math rightNum = rightNum + 1 ;
+		endif
+		if virtualLevel >= 76
+			math backNum = backNum + 1 ;
+		endif
+	endif
+	/* until now: l7 r7 f9 b7 */
+	if virtualLevel >= 82
+			/* JUMP */
+			math leftNum = leftNum + 7 ;
+			math rightNum = rightNum + 7 ;
+			math frontNum = frontNum + 9 ;
+			math backNum = backNum + 7 ;
+		math frontNum = frontNum + 1 ;
+	endif
+	if virtualLevel >= 85
+		math leftNum = leftNum + 1 ;
+		math rightNum = rightNum + 1 ;
+	endif
+	if virtualLevel >= 88
+		math backNum = backNum + 1 ;
+	endif
+	/* until now: l8 r8 f10 b8 */
+	if virtualLevel >= 90
+		math leftNum = leftNum + 2 ;
+		math rightNum = rightNum + 2 ;
+		math frontNum = frontNum + 2 ;
+		math backNum = backNum + 2 ;
+	endif
+	/* until now: l10 r10 f12 b10 */
+
+	/* battleship+ turretNum minimum */
+	ship GetParent GetClass shipClass ;
+		if virtualLevel < 40 && shipClass >= 8
+			if leftNum < 3
+				leftNum = 3 ;
+			endif
+			if rightNum < 3
+				rightNum = 3 ;
+			endif
+			if frontNum < 5
+				frontNum = 5 ;
+			endif
+			if backNum < 3
+				backNum = 3 ;
+			endif
+		endif 
+
+	/* RANDOMIZER */
+	math randomNumber = Rnd 0 1 ;
+	if randomNumber == 1
+		math leftNum = leftNum + 1 ;
+	endif
+	math randomNumber = Rnd 0 1 ;
+	if randomNumber == 1
+		math rightNum = rightNum + 1 ;
+	endif
+	math randomNumber = Rnd 0 1 ;
+	if randomNumber == 1
+		math frontNum = frontNum + 1 ;
+	endif
+	math randomNumber = Rnd 0 1 ;
+	if randomNumber == 1
+		math backNum = backNum + 1 ;
+	endif
+
+	l_battery = 0 ;
+	ship GetParent GetWeaponsBattery SetTuretsNo l_battery leftNum ;
+	l_battery = 1 ;
+	ship GetParent GetWeaponsBattery SetTuretsNo l_battery rightNum ;
+	l_battery = 2 ;
+	ship GetParent GetWeaponsBattery SetTuretsNo l_battery frontNum ;
+	l_battery = 3 ;
+	ship GetParent GetWeaponsBattery SetTuretsNo l_battery backNum ;
+
+/* choose and assign weaponIds */
+	/* array GetElementNum weaponArray imax ; 
+	math imax = imax - 1 ; */
+	math imin = level mod 10 ; /* modulus */
+	if imin <= 3
+		realMin = 0 ;
+		realMax = 3 ;
+	endif
+	if imin > 3 && imin <= 6
+		realMin = 2 ;
+		realMax = 6 ;
+	endif
+	if imin > 6
+		realMin = 5 ;
+		realMax = 8 ;
+	endif
+	
+	/* OVERRIDE COLORFUL WEAPONS - FOR RECORDING */
+	/* array int colorfulArray ;
+	
+	for i = 0 <= 152 step 1 
+		array Add colorfulArray i ;
+	endfor 
+	realMin = 0 ;
+	realMax = 152 ; 
+	CHANGE BELOW weaponArray to colorfulArray 
+	*/
+					math randomNumber = Rnd realMin realMax ;
+					array Get weaponArray weaponId randomNumber ; 
+		/* Assign weapon left battery */
+		l_battery = 0 ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery weaponId ;
+					math randomNumber = Rnd realMin realMax ;
+					array Get weaponArray weaponId randomNumber ;
+		/* Assign weapon right battery */
+		l_battery = 1 ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery weaponId ;
+					math randomNumber = Rnd realMin realMax ;
+					array Get weaponArray weaponId randomNumber ;
+		/* Assign weapon front battery */
+		l_battery = 2 ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery weaponId ;
+					math randomNumber = Rnd realMin realMax ;
+					array Get weaponArray weaponId randomNumber ;
+		/* Assign weapon back battery */
+		l_battery = 3 ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery weaponId ;
+
+
+
+
+
+/* THE FORCE UNLEASHED - Set ships with proper turrets, not random */
+/* Array 0 - Left / 1 - Right / 2 - Front / 3 - Back */
+
+ int maxHull = 0.0 ; 
+ int customShip = 0 ;
+
+ int l_battery = 0 ;
+ int weaponId = 27 ;
+
+ int tempLeftNum = 0 ;
+ int tempRightNum = 0 ;
+ int tempFrontNum = 0 ;
+ int tempBackNum = 0 ;
+
+ array str weaponTypes ;
+ array Add weaponTypes SWHTL SWHTL SWHTL SWHTL ;
+
+ ship GetByKeyName keyName GetHPMax maxHull ;
+
+/*Intersector*/
+ 	if maxHull == 2801
+		PrintMessage FoundIntersector__Modifying_Turrets ;
+		tempLeftNum = 2 ;
+		tempRightNum = 4 ;
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWHTL SWHTL SWHTL SWHTL ;
+		customShip = 1 ;
+	endif
+
+	if customShip == 1
+		PrintMessage CUSTOM_SHIP_FOUND____ADDING_TURRETS ;
+		l_battery = 0 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempLeftNum ;
+
+		l_battery = 1 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempRightNum ;
+
+		l_battery = 2 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempFrontNum ;
+
+		l_battery = 3 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempBackNum ;
+
+
+
+		array Get weaponTypes tempWeaponType 0 ;
+		l_battery = 0 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+		array Get weaponTypes tempWeaponType 1 ;
+		l_battery = 1 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+		array Get weaponTypes tempWeaponType 2 ;
+		l_battery = 2 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+		array Get weaponTypes tempWeaponType 3 ;
+		l_battery = 3 ;
+		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+	endif
+
+
+
+
+
+
+
+/* Assign inventory(commodities) */		
+ship GetParent FillInventory 0 ;
+
+		/* Assign heavy weapons */
+		int h_battery ;
+		
+		h_battery = 0 ;
+		math randomNumber = Rnd 0 2 ;
+		array Get heavyWeaponArray weaponId randomNumber ; 
+		ship GetParent GetLauncher SetWeapons h_battery weaponId ;
+		h_battery = 1 ;
+		math randomNumber = Rnd 0 2 ;
+		array Get heavyWeaponArray weaponId randomNumber ; 
+		ship GetParent GetLauncher SetWeapons h_battery weaponId ;
+		h_battery = 2 ;
+		math randomNumber = Rnd 0 2 ;
+		array Get heavyWeaponArray weaponId randomNumber ; 
+		ship GetParent GetLauncher SetWeapons h_battery weaponId ;
+		h_battery = 3 ;
+		math randomNumber = Rnd 0 2 ;
+		array Get heavyWeaponArray weaponId randomNumber ; 
+		ship GetParent GetLauncher SetWeapons h_battery weaponId ;
+	
+
+/* ASSIGN FIGHTERS */
+int numOfWings ;
+str modelId = DELTA ;
+i = 0 ;
+		
+ship GetParent GetFightersWing GetWingsNo numOfWings ;
+/* if ship has wings, set fighters inside */
+if numOfWings > 0 && level >= 20
+	for i = 0 < numOfWings step 1 
+		math randomNumber = Rnd 0 1 ;
+		array Get fightersArray modelId randomNumber ; 
+		ship GetParent GetFightersWing AddMaxFighters i modelId ;
+	endfor
+endif	
+
+/* assign visual level */
+math level = levelKeeper / 2 ;
+ship GetParent SetLevel level ;
+
+End

@@ -1,0 +1,28 @@
+Sort:	1
+Lenght:	30.0
+Speed:	360
+BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\TFL_S_SHTL\TFL_S_SHTLBeam.par
+
+
+
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\TFL_S_SHTL\TFL_S_SHTLSparcles.par
+	ParticleSort:	1
+	ParticleTimer:	1.3
+}
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\TFL_S_SHTL\TFL_S_SHTL.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+
+CentralY:	0
+Duration:	2.0
+
+Sound:
+{
+	Shot:	Heavyturbo1A
+}

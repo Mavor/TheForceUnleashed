@@ -1,5 +1,5 @@
 txt:	
-FrustumRadius:	50.50
+FrustumRadius:	200.50
 Mobility:	0
 Mass:	1.00
 Hittable:	0
@@ -15,10 +15,10 @@ StaticMesh:
 	Position:	0.00	0.00	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
-	StreamDistance:	9000.00
-	DrawDistance:	8000.00
+	StreamDistance:	5000.00
+	DrawDistance:	4000.00
 	AditionalSort:	DEFAULT
-	Scale:	1.00	1.00	1.00
+	Scale:	1.60	1.60	1.60
 }	
 StaticMesh:	
 {	
@@ -27,178 +27,178 @@ StaticMesh:
 	Position:	0.00	0.00	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
-	StreamDistance:	9000.00
-	DrawDistance:	8000.00
+	StreamDistance:	5000.00
+	DrawDistance:	4000.00
 	AditionalSort:	DEFAULT
-	Scale:	1.00	1.00	1.00
+	Scale:	1.60	1.60	1.60
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	0.00	-2.00	-63.00
+	Position:	0.00	-3.20	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	26.00	26.00	1.00
+	Scale:	41.60	41.60	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-17.00	-2.00	-63.00
+	Position:	-27.20	-3.20	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	21.00	21.00	1.00
+	Scale:	33.60	33.60	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	17.00	-2.00	-63.00
+	Position:	27.20	-3.20	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	21.00	21.00	1.00
+	Scale:	33.60	33.60	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	22.91	-0.42	-62.14
+	Position:	36.65	-0.67	-99.42
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	27.61	-0.41	-62.37
+	Position:	44.17	-0.66	-99.79
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	8.81	-4.60	-63.68
+	Position:	14.08	-7.59	-100.88
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	15.00	15.00	1.00
+	Scale:	24.00	24.00	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-8.80	-4.60	-63.00
+	Position:	-14.08	-7.36	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	15.00	15.00	1.00
+	Scale:	24.00	24.00	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	10.81	0.30	-67.33
+	Position:	17.18	0.48	-107.73
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-10.81	0.30	-67.00
+	Position:	-17.30	0.48	-107.20
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	7.10	1.03	-67.00
+	Position:	11.36	1.65	-107.20
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-7.10	1.03	-67.00
+	Position:	-11.36	1.65	-107.20
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-23.10	-0.30	-63.00
+	Position:	-36.96	-0.48	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 StaticMesh:	
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\Thruster_Round.mdl
-	Position:	-27.61	-0.30	-63.00
+	Position:	-44.18	-0.48	-100.80
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	8.00	8.00	1.00
+	Scale:	12.80	12.80	0.50
 }	
 ParticleEmiter:	
 {	
 	ParticleName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\lampYellow.par
-	Position:	5.00	20.80	-45.40
+	Position:	8.00	33.28	-72.64
 	ParentMatrix:	1
 	DrawDistance:	220.00
 }	
 ParticleEmiter:	
 {	
 	ParticleName:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\lampYellow.par
-	Position:	-5.00	20.80	-45.40
+	Position:	-8.00	33.28	-72.64
 	ParentMatrix:	1
 	DrawDistance:	220.00
 }	
@@ -213,6 +213,6 @@ ConvexCollisionMeshes:
 Waypoints:	
 {	
 	DroneSpawnPosition:	0.00	0.00	0.00
-	DroneScale:	1.00
+	DroneScale:	2.00
 	DataFile:	Mods\TheForceUnleashed\Data\Models\Ships\em_Titan\em_Titan.mg
 }	

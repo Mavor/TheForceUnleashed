@@ -1,5 +1,5 @@
 txt
-Model:	FRACTALVSD
+Model:	EMTITAN
 Faction:	CONCORD
 Profession:	Security
 Level:	35

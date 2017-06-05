@@ -31,3 +31,15 @@ ShipSystem:	LIGHTWEAPONS	SWLTHL
 {
 	Producing:	4
 }
+ShipSystem:	LIGHTWEAPONS	TFL_SHTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	TFL_QSHTL
+{
+	Producing:	4
+}
+ShipSystem:	LIGHTWEAPONS	TFL_S_SHTL
+{
+	Producing:	4
+}

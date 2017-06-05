@@ -1,0 +1,19 @@
+Sort:	1
+Lenght:	30.0
+Speed:	330
+BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\TFL_QSHTL\1\TFL_QSHTLBeam.par
+
+Particle:
+{
+	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\TFL_QSHTL\1\TFL_QSHTL.par
+	ParticleSort:	5
+	ParticleTimer:	0.2
+}
+
+CentralY:	0
+Duration:	2.5
+
+Sound:
+{
+	Shot:	Heavyturbo1A	
+}
