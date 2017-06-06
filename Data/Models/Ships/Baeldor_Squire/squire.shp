@@ -1,0 +1,283 @@
+txt	
+ShipModel:	
+{	
+		Name:	Data\Models\Ships\Baeldor_Squire\Gunship_Squire.asb
+}	
+ShipBase:	
+{	
+		Name:	Squire
+		Value:	350000
+		Maneuver:	1.75
+		Hull:	3500.00
+		Cargo:	95
+		Crew:	15
+		Hangar:	0
+		Cloak:	0
+		Descript:	CHA_SQUIRE_TXT
+		Soak:	0.05
+		Mass:	2.00
+		AngularDamping:	0.00
+		Evasion:	0.10
+		LandingPoint:	0.00	-0.50	0.00
+}	
+ShipEffectPoints:	
+{	
+	No:	16
+	0.84	-1.30	5.53
+	2.45	-1.32	5.13
+	2.46	-2.28	1.17
+	3.06	1.61	1.43
+	3.28	0.00	-1.78
+	3.58	-1.77	-4.51
+	2.55	0.10	-4.86
+	1.37	0.17	-5.89
+	-0.84	-1.30	5.53
+	-2.45	-1.32	5.13
+	-2.46	-2.28	1.17
+	-3.06	1.61	1.43
+	-3.28	0.00	-1.78
+	-3.58	-1.77	-4.51
+	-2.55	0.10	-4.86
+	-1.37	0.17	-5.89
+}	
+ShipTrails:	
+{	
+	Particles:	3
+	TrailModelsStart:	10
+	TrailModels:	1
+	TrailSizeMin:	0.40
+	TrailSizeMax:	1.20
+	Trail:	
+	{	
+		Position:	0.000	-0.100	-1.600
+		TrailLengthMax:	60.000
+		Width:	0.200
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	0.000	0.180	-1.500
+		TrailLengthMax:	60.000
+		Width:	0.200
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	0.250	-0.040	-1.300
+		TrailLengthMax:	60.000
+		Width:	0.200
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	-0.250	-0.040	-1.300
+		TrailLengthMax:	60.000
+		Width:	0.200
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.00	-0.10	-1.60
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.00	0.18	-1.50
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.25	-0.04	-1.30
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	-0.25	-0.04	-1.30
+	}	
+}	
+ShipWeapons:	
+{	
+	WeaponsPower:	30.00
+	WeaponsPowerRefill:	6.00
+	WeaponsPowerDownTime:	3.00
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	0.00	0.18	0.83
+			Rotation:	0.00	0.00	0.00
+			Scale:	0
+			HorizontalArcMinus:	2.90
+			HorizontalArcPlus:	2.90
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	-0.35	0.05	-0.73
+			Rotation:	0.33	-1.57	0.00
+			Scale:	0
+			HorizontalArcMinus:	1.80
+			HorizontalArcPlus:	2.10
+			VerticalArcMinus:	0.52
+			VerticalArcPlus:	2.50
+		}	
+		TurretSlot:	
+		{	
+			Position:	0.35	0.05	-0.73
+			Rotation:	0.33	1.57	0.00
+			Scale:	0
+			HorizontalArcMinus:	2.10
+			HorizontalArcPlus:	1.80
+			VerticalArcMinus:	0.52
+			VerticalArcPlus:	2.50
+		}	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+}	
+ShipHeavyWeapons:	
+{	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	-0.34	-0.28	0.72
+			Rotation:	0.00	-1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	12
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.34	-0.28	0.72
+			Rotation:	0.00	1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	12
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+}	
+PowerCore:	
+{	
+	Hp:	175.00
+	Firewall:	0.30
+	Power:	100.00
+	EnergyRecharge:	1.00
+	Feedback:	0.00
+}	
+Propulsion:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	Speed:	60.00
+	Acceleration:	1.00
+	PowerToEngines:	1.50
+}	
+Sensors:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	SensorRadius:	2000.00
+	Detection:	0.10
+}	
+Grappler:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	GrappleRange:	230.00
+	Overload:	0.00
+}	
+Transporter:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	TransportRange:	1000.00
+	Capacity:	8.00
+	Deflection:	0.00
+}	
+Hangar:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	PreLaunch:	0.00
+	Fuel:	0.00
+	WingNo:	0
+}	
+Cloak:	
+{	
+	Hp:	175.00
+	Firewall:	0.00
+	CloakStrength:	0.50
+	ClaokStability:	0.50
+}	
+ShipShields:	
+{	
+	Strength:	750.00
+	Recharge:	4.00
+	Reboot:	2.50
+	HP:	175.00
+	Firewall:	0.00
+	Biometric:	0.20
+	ResistanceEnergy:	0.15
+	ResistanceProjectile:	0.60
+	ResistancePlasma:	0.85
+	ResistanceRadiation:	0.20
+	ResistanceEMP:	0.15
+}	
+ShipShieldsMesh:	
+{	
+	MeshName:	Data\Models\Sphere\ShipSphereShield7_2.mdl
+	Scale:	1.50	1.50	4.00
+	Position:	0.00	0.00	0.00
+}	
+ShipDerelict:	
+{	
+	Derelict:	SQUIRE
+}	
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnTDriveEnd:	Data\SpecialEffect\TDriveFlash\deactivation.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}	
+MountedCamera:	
+{	
+	Position:	-0.00	2.10	-2.40
+	HorizontalOffset:	0.00
+	VerticalOffset:	220.00
+	FrontCamPosition: 0.00	-1.00	-7.50
+}	

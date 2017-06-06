@@ -1,0 +1,526 @@
+txt	
+ShipModel:	
+{	
+		Name:	Data\Models\Ships\Baeldor_Tzar\Carrier_Tzar.asb
+}	
+ShipBase:	
+{	
+		Name:	Tzar
+		Value:	70000000
+		Maneuver:	1.00
+		Hull:	265000.00
+		Cargo:	580
+		Crew:	200
+		Hangar:	1
+		Cloak:	0
+		Descript:	CHA_TZAR_TXT
+		Soak:	0.15
+		Mass:	600.00
+		AngularDamping:	0.00
+		Evasion:	0.01
+		LandingPoint:	0.00	-25.85	0.00
+}	
+ShipEffectPoints:	
+{	
+	No:	16
+	0.84	-1.30	5.53
+	2.45	-1.32	5.13
+	2.46	-2.28	1.17
+	3.06	1.61	1.43
+	3.28	0.00	-1.78
+	3.58	-1.77	-4.51
+	2.55	0.10	-4.86
+	1.37	0.17	-5.89
+	-0.84	-1.30	5.53
+	-2.45	-1.32	5.13
+	-2.46	-2.28	1.17
+	-3.06	1.61	1.43
+	-3.28	0.00	-1.78
+	-3.58	-1.77	-4.51
+	-2.55	0.10	-4.86
+	-1.37	0.17	-5.89
+}	
+ShipTrails:	
+{	
+	Particles:	4
+	TrailModelsStart:	10
+	TrailModels:	1
+	TrailSizeMin:	0.40
+	TrailSizeMax:	20.20
+	Trail:	
+	{	
+		Position:	-9.000	-4.000	-72.300
+		TrailLengthMax:	300.000
+		Width:	2.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	9.000	-4.000	-72.300
+		TrailLengthMax:	300.000
+		Width:	2.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	-5.500	7.550	-70.060
+		TrailLengthMax:	300.000
+		Width:	2.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	5.500	7.550	-70.060
+		TrailLengthMax:	300.000
+		Width:	2.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		Position:	0.300	-0.750	-72.800
+		TrailLengthMax:	300.000
+		Width:	3.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	3
+		Position:	-9.00	-4.00	-72.30
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	3
+		Position:	9.00	-4.00	-72.30
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	3
+		Position:	-5.50	7.55	-70.06
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	3
+		Position:	5.50	7.55	-70.06
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	4
+		Position:	0.30	-0.75	-72.80
+	}	
+}	
+ShipWeapons:	
+{	
+	WeaponsPower:	220.00
+	WeaponsPowerRefill:	12.00
+	WeaponsPowerDownTime:	12.00
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-10.24	10.97	23.85
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.40	10.45	-24.30
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.24	10.97	29.06
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.26	11.32	4.59
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	1.60
+			HorizontalArcPlus:	1.60
+			VerticalArcMinus:	0.42
+			VerticalArcPlus:	2.50
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.24	10.97	18.85
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.45	10.49	-18.35
+			Rotation:	0.00	0.00	0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	10.24	10.97	23.85
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.40	10.45	-24.30
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.24	10.97	29.06
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.26	11.32	4.59
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	1.60
+			HorizontalArcPlus:	1.60
+			VerticalArcMinus:	0.42
+			VerticalArcPlus:	2.50
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.24	10.97	18.85
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.45	10.49	-18.35
+			Rotation:	0.00	0.00	-0.87
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-7.92	9.53	77.57
+			Rotation:	0.00	0.00	0.93
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.21
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	7.92	9.53	77.57
+			Rotation:	0.00	0.00	-0.93
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.21
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	-9.05	-0.96	77.91
+			Rotation:	0.00	0.00	1.57
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.31
+			VerticalArcPlus:	2.80
+		}	
+		TurretSlot:	
+		{	
+			Position:	9.05	-0.96	77.91
+			Rotation:	0.00	0.00	-1.57
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.31
+			VerticalArcPlus:	2.80
+		}	
+		TurretSlot:	
+		{	
+			Position:	-9.12	4.70	79.52
+			Rotation:	0.00	0.00	1.57
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.21
+			VerticalArcPlus:	2.70
+		}	
+		TurretSlot:	
+		{	
+			Position:	9.12	4.70	79.52
+			Rotation:	0.00	0.00	-1.57
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.21
+			VerticalArcPlus:	2.70
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-10.39	-8.81	23.77
+			Rotation:	0.00	0.00	2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.39	-8.81	23.77
+			Rotation:	0.00	0.00	-2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.39	-8.81	18.85
+			Rotation:	0.00	0.00	2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.39	-8.81	18.85
+			Rotation:	0.00	0.00	-2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	-10.39	-8.81	29.00
+			Rotation:	0.00	0.00	2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	10.39	-8.81	29.00
+			Rotation:	0.00	0.00	-2.42
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	-0.04
+			VerticalArcPlus:	3.00
+		}	
+	}	
+}	
+ShipHeavyWeapons:	
+{	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	-4.45	-14.84	-12.09
+			Rotation:	0.00	-1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	100
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	4.45	-14.84	-12.09
+			Rotation:	0.00	1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	100
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.00	-6.43	70.25
+			Rotation:	0.00	0.00	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	100
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.00	-11.28	-65.75
+			Rotation:	0.00	3.12	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	100
+		}	
+	}	
+}	
+PowerCore:	
+{	
+	Hp:	13250.00
+	Firewall:	0.30
+	Power:	220.00
+	EnergyRecharge:	1.00
+	Feedback:	0.00
+}	
+Propulsion:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	Speed:	60.00
+	Acceleration:	1.00
+	PowerToEngines:	4.00
+}	
+Sensors:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	SensorRadius:	2000.00
+	Detection:	0.10
+}	
+Grappler:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	GrappleRange:	230.00
+	Overload:	0.00
+}	
+Transporter:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	TransportRange:	1000.00
+	Capacity:	16.00
+	Deflection:	0.00
+}	
+Hangar:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	PreLaunch:	30.00
+	Fuel:	90.00
+	WingNo:	3
+}	
+Cloak:	
+{	
+	Hp:	13250.00
+	Firewall:	0.00
+	CloakStrength:	0.50
+	ClaokStability:	0.50
+}	
+ShipShields:	
+{	
+	Strength:	35000.00
+	Recharge:	87.50
+	Reboot:	15.00
+	HP:	13250.00
+	Firewall:	0.00
+	Biometric:	0.20
+	ResistanceEnergy:	0.80
+	ResistanceProjectile:	0.60
+	ResistancePlasma:	0.00
+	ResistanceRadiation:	0.20
+	ResistanceEMP:	0.15
+}	
+ShipShieldsMesh:	
+{	
+	MeshName:	Data\Models\Sphere\ShipSphereShield7_2.mdl
+	Scale:	55.00	70.00	200.00
+	Position:	0.00	0.00	0.00
+}	
+ShipDerelict:	
+{	
+	Derelict:	TZAR
+}	
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnTDriveEnd:	Data\SpecialEffect\TDriveFlash\deactivation.sal
+}	
+MountedCamera:	
+{	
+	Position:	-0.00	19.99	-4.80
+	HorizontalOffset:	0.00
+	VerticalOffset:	-155.30
+	FrontCamPosition: 0.00	-1.00	-10.50
+}	

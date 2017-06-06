@@ -394,13 +394,89 @@ int imax ;
 
 /*Intersector*/
  	if maxHull == 2801
-		PrintMessage FoundIntersector__Modifying_Turrets ;
+ 		PrintMessage __________ ;
+		PrintMessage Found_Fractal_Intersector__Modifying_Turrets ;
+
 		tempLeftNum = 2 ;
 		tempRightNum = 4 ;
+		tempFrontNum = 0 ;
+		tempBackNum = 0 ;
+
 		array RemoveAll weaponTypes ;
-		array Add weaponTypes SWHTL SWHTL SWHTL SWHTL ;
+		array Add weaponTypes SWLTL SWFL SWFL SWFL ;
 		customShip = 1 ;
 	endif
+
+	if maxHull == 25001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Fractal_Fulgor__Modifying_Turrets ;
+
+		tempLeftNum = 2 ;
+		tempRightNum = 2 ;
+		tempFrontNum = 5 ;
+		tempBackNum = 5 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWSBIC SWSBQTL SWLTL SWLTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 4401
+ 		PrintMessage __________ ;
+		PrintMessage Found_Fractal_Indictor__Modifying_Turrets ;
+
+		tempLeftNum = 3 ;
+		tempRightNum = 0 ;
+		tempFrontNum = 0 ;
+		tempBackNum = 0 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWLTHL SWLTHL SWLTHL SWLTHL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 20001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Fractal_Kontos__Modifying_Turrets ;
+
+		tempLeftNum = 9 ;
+		tempRightNum = 2 ;
+		tempFrontNum = 8 ;
+		tempBackNum = 5 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWQTL SWMTL SWLTL SWLTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 50001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Fractal_VSD__Modifying_Turrets ;
+
+		tempLeftNum = 9 ;
+		tempRightNum = 10 ;
+		tempFrontNum = 12 ;
+		tempBackNum = 9 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWHTL SWQTL SWLTL SWLTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 250001
+ 		PrintMessage __________ ;
+		PrintMessage Found_TFU_TitanSB__Modifying_Turrets ;
+
+		tempLeftNum = 36 ;
+		tempRightNum = 8 ;
+		tempFrontNum = 6 ;
+		tempBackNum = 6 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWMTL TFL_S_SHTL TFL_SHTL TFL_SHTL ;
+		customShip = 1 ;
+	endif
+
 
 	if customShip == 1
 		PrintMessage CUSTOM_SHIP_FOUND____ADDING_TURRETS ;
@@ -433,6 +509,8 @@ int imax ;
 		array Get weaponTypes tempWeaponType 3 ;
 		l_battery = 3 ;
 		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+		customShip = 0 ;
 	endif
 
 

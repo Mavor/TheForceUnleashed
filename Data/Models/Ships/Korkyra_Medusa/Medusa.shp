@@ -1,0 +1,347 @@
+txt	
+ShipModel:	
+{	
+		Name:	Data\Models\Ships\Korkyra_Medusa\Medusa.asb
+}	
+ShipBase:	
+{	
+		Name:	Medusa
+		Value:	2000000
+		Maneuver:	1.47
+		Hull:	13000.00
+		Cargo:	160
+		Crew:	40
+		Hangar:	0
+		Cloak:	0
+		Descript:	CHA_HYDRA_TXT
+		Soak:	0.05
+		Mass:	100.00
+		AngularDamping:	0.00
+		Evasion:	0.06
+		LandingPoint:	0.00	-3.90	0.00
+}	
+ShipEffectPoints:	
+{	
+	No:	16
+	0.84	-1.30	5.53
+	2.45	-1.32	5.13
+	2.46	-2.28	1.17
+	3.06	1.61	1.43
+	3.28	0.00	-1.78
+	3.58	-1.77	-4.51
+	2.55	0.10	-4.86
+	1.37	0.17	-5.89
+	-0.84	-1.30	5.53
+	-2.45	-1.32	5.13
+	-2.46	-2.28	1.17
+	-3.06	1.61	1.43
+	-3.28	0.00	-1.78
+	-3.58	-1.77	-4.51
+	-2.55	0.10	-4.86
+	-1.37	0.17	-5.89
+}	
+ShipTrails:	
+{	
+	Particles:	0
+	TrailModelsStart:	8
+	TrailModels:	1
+	TrailSizeMin:	0.40
+	TrailSizeMax:	4.50
+	Trail:	
+	{	
+		Position:	0.000	0.420	-9.500
+		TrailLengthMax:	60.000
+		Width:	0.400
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.07	0.04	0.00
+	}	
+	Trail:	
+	{	
+		Position:	-0.300	-0.190	-9.500
+		TrailLengthMax:	60.000
+		Width:	0.400
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.07	0.04	0.00
+	}	
+	Trail:	
+	{	
+		Position:	0.300	-0.190	-9.500
+		TrailLengthMax:	60.000
+		Width:	0.400
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.07	0.04	0.00
+	}	
+	Trail:	
+	{	
+		Position:	-4.350	-2.600	1.840
+		TrailLengthMax:	30.000
+		Width:	0.100
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.05	0.05	0.05
+	}	
+	Trail:	
+	{	
+		Position:	4.350	-2.600	1.840
+		TrailLengthMax:	30.000
+		Width:	0.100
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.05	0.05	0.05
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.00	0.42	-9.50
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	-0.30	-0.19	-9.50
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.30	-0.19	-9.50
+	}	
+}	
+ShipWeapons:	
+{	
+	WeaponsPower:	35.00
+	WeaponsPowerRefill:	7.00
+	WeaponsPowerDownTime:	1.50
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-0.63	0.52	-1.76
+			Rotation:	0.52	-1.57	0.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	2.60
+		}	
+		TurretSlot:	
+		{	
+			Position:	-2.81	-1.75	1.59
+			Rotation:	0.52	-1.57	0.10
+			Scale:	1
+			HorizontalArcMinus:	1.80
+			HorizontalArcPlus:	2.00
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	2.60
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	0.63	0.52	-1.76
+			Rotation:	0.52	1.57	0.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	2.60
+		}	
+		TurretSlot:	
+		{	
+			Position:	2.81	-1.75	1.59
+			Rotation:	0.52	1.57	0.10
+			Scale:	1
+			HorizontalArcMinus:	2.00
+			HorizontalArcPlus:	1.80
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	2.60
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-3.09	-1.98	4.05
+			Rotation:	1.39	0.00	1.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	3.09	-1.98	4.05
+			Rotation:	1.39	0.00	-1.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.01
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	-1.60	-1.11	6.45
+			Rotation:	1.33	0.00	1.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.07
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	1.60	-1.11	6.45
+			Rotation:	1.33	0.00	-1.00
+			Scale:	1
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.07
+			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+}	
+ShipHeavyWeapons:	
+{	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	-1.72	-0.56	4.93
+			Rotation:	0.00	-1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	12
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	1.72	-0.56	4.93
+			Rotation:	0.00	1.56	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	12
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.00	-0.91	9.33
+			Rotation:	0.00	0.00	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	12
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+}	
+PowerCore:	
+{	
+	Hp:	650.00
+	Firewall:	0.30
+	Power:	125.00
+	EnergyRecharge:	1.00
+	Feedback:	0.00
+}	
+Propulsion:	
+{	
+	Hp:	650.00
+	Firewall:	0.00
+	Speed:	60.00
+	Acceleration:	1.00
+	PowerToEngines:	2.00
+}	
+Sensors:	
+{	
+	Hp:	650.00
+	Firewall:	0.00
+	SensorRadius:	2000.00
+	Detection:	0.10
+}	
+Grappler:	
+{	
+	Hp:	650.00
+	Firewall:	0.00
+	GrappleRange:	230.00
+	Overload:	0.00
+}	
+Transporter:	
+{	
+	Hp:	650.00
+	Firewall:	0.00
+	TransportRange:	1000.00
+	Capacity:	10.00
+	Deflection:	0.00
+}	
+Hangar:	
+{	
+	Hp:	0.00
+	Firewall:	0.00
+	PreLaunch:	0.00
+	Fuel:	0.00
+	WingNo:	0
+}	
+Cloak:	
+{	
+	Hp:	0.00
+	Firewall:	0.00
+	CloakStrength:	0.50
+	ClaokStability:	0.50
+}	
+ShipShields:	
+{	
+	Strength:	1600.00
+	Recharge:	50.00
+	Reboot:	2.00
+	HP:	650.00
+	Firewall:	0.00
+	Biometric:	0.20
+	ResistanceEnergy:	0.40
+	ResistanceProjectile:	0.00
+	ResistancePlasma:	0.75
+	ResistanceRadiation:	0.20
+	ResistanceEMP:	0.15
+}	
+ShipShieldsMesh:	
+{	
+	MeshName:	Data\Models\Sphere\ShipSphereShield7_2.mdl
+	Scale:	12.00	11.00	24.00
+	Position:	0.00	0.00	0.00
+}	
+ShipDerelict:	
+{	
+	Derelict:	MEDUSA
+}	
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnTDriveEnd:	Data\SpecialEffect\TDriveFlash\deactivation.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}	
+MountedCamera:	
+{	
+	Position:	0.00	2.20	-6.50
+	HorizontalOffset:	0.00
+	VerticalOffset:	-97.50
+	FrontCamPosition: 0.00	-1.00	-7.50
+}	

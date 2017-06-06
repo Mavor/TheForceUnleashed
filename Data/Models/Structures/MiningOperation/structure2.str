@@ -1,0 +1,74 @@
+txt
+Param:	
+{	
+	Sort:	SRT_MINING
+	PulseTime:	10.00
+	EnterRadius:	3000.00
+	ExitRadius:	3500.00
+	Destructible:	0
+	OnDestroy:	Data\Scripts\StructureDefault\OnDestroy.sal
+	OnActivate:	Data\Models\Structures\MiningOperation\SCR_activate.sal
+	OnDeactivate:	Data\Models\Structures\MiningOperation\SCR_deactivate.sal
+	OnScan:	Data\Scripts\StructureDefault\OnScan.sal
+	OnTransport:	Data\Scripts\StructureDefault\OnTransport.sal
+	OnHack:	Data\Scripts\StructureDefault\OnHack.sal
+	OnEnter:	Data\Scripts\StructureDefault\OnEnter.sal
+	OnExit:	Data\Scripts\StructureDefault\OnExit.sal
+	OnHP75:	Data\Scripts\StructureDefault\OnHp75.sal
+	OnHP50:	Data\Scripts\StructureDefault\OnHp50.sal
+	OnHP25:	Data\Scripts\StructureDefault\OnHp25.sal
+	OnHail:	Data\Scripts\StructureDefault\OnHail.sal
+	OnPulse:	Data\Models\Structures\MiningOperation\SCR_pulse.sal
+	OnRepair:	Data\Scripts\StructureDefault\OnRepair.sal
+	OnConstruction0:	Data\Scripts\StructureDefault\OnConstruction0.sal
+	OnConstruction50:	Data\Scripts\StructureDefault\OnConstruction50.sal
+	OnConstruction100:	Data\Scripts\StructureDefault\OnConstruction100.sal
+	BuildStatus:	2
+	BuildLevel:	0
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\MiningOperation\MINING_OPERATION_RED.asb
+		Hull:	10000
+		Name:	minOp
+		Descript:	minOp1
+		ConstructionTimeRequired:	250.0
+		OreConstructionCost:	500
+		GasConstructionCost:	300
+		MaterialConstructionCost:	300
+		OreYield:	300.0
+		GasYield:	0.0
+		MaterialYield:	0.0
+	}
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\MiningOperation\MINING_OPERATION_RED_UPGRADE2.asb
+		Hull:	10000
+		Name:	minOp
+		Descript:	minOp1
+		ConstructionTimeRequired:	600.0
+		OreConstructionCost:	2500
+		GasConstructionCost:	600
+		MaterialConstructionCost:	600
+		OreYield:	600.0
+		GasYield:	0.0
+		MaterialYield:	0.0
+	}
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\MiningOperation\MINING_OPERATION_RED_UPGRADE3.asb
+		Hull:	10000
+		Name:	minOp
+		Descript:	minOp1
+		ConstructionTimeRequired:	960.0
+		OreConstructionCost:	7500
+		GasConstructionCost:	1000
+		MaterialConstructionCost:	1000
+		OreYield:	1050.0
+		GasYield:	0.0
+		MaterialYield:	0.0
+	}
+	AmbientSound:
+	{
+		SoundName:		STR_MinOp_Loop
+	}
+}

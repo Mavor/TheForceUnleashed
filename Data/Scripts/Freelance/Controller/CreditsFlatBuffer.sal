@@ -1,0 +1,32 @@
+/* Reward credits according to level */
+PrintMessage CreditsReward! ;
+
+	int level = $freelanceLevelRecommended ;
+	int credits ;
+	float multiplier = $creditsMultiplier ;
+
+	/* around 5x = regular mission multiplier */
+	int levelCredits = 0 ;
+	credits = 12000 ;
+	math levelCredits = level * 1075 ;
+	math credits = credits + levelCredits ;
+	
+	/* MULTIPLY, around 5x = regular mission multiplier */
+	math credits = credits * multiplier ;
+	
+	int exp = 0 ;
+
+	math exp = credits * 0.023 ;
+	
+	/* THE FORCE UNLEASHED - INCREASED REWARDS */
+	math exp = exp * 3 ;
+	math credits = credits * 3 ;
+	
+	/* player AddCredits credits ; */
+	/* is now rewarding when it happened
+	put credits in buffer awarded at the end of the mission 
+	int freelanceRewardFlatModifier = $freelanceRewardFlatModifier ;
+	math freelanceRewardFlatModifier = freelanceRewardFlatModifier + credits ;
+	globalVar $freelanceRewardFlatModifier = freelanceRewardFlatModifier ; */
+
+End

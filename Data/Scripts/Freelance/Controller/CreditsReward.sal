@@ -1,0 +1,141 @@
+/* Reward credits according to level */
+PrintMessage CreditsReward! ;
+
+	int level = $freelanceLevelRecommended ;
+	/* player GetLevel level ; */
+	int credits ;
+	float multiplier = $freelanceRewardMultiplier ;
+
+	/* OLD around 5x = regular mission multiplier 
+	if level > 0 && level <= 5
+		credits = 12000 ;
+	endif 
+	if level > 5 && level <= 10
+		credits = 16000 ;
+	endif 
+	if level > 10 && level <= 20
+		credits = 20000 ;
+	endif 
+	if level > 20 && level <= 30
+		credits = 27500 ;
+	endif 
+	if level > 30 && level <= 40
+		credits = 35000 ;
+	endif 
+	if level > 40 && level <= 50
+		credits = 45000 ;
+	endif 
+	if level > 50 && level <= 60
+		credits = 55000 ;
+	endif 
+	if level > 60 && level <= 70
+		credits = 75000 ;
+	endif 
+	if level > 70
+		credits = 85000 ;
+	endif  */
+	int levelCredits = 0 ;
+	/* credits = 28000 ; */
+	credits = 40000 ;
+	/* TEMP change, last was 1075, also EXP below */
+	math levelCredits = level * 900 ;
+	math credits = credits + levelCredits ;
+	
+	/* add more credits as tiers of advancement through ship "classes" you will be battling against */
+	int recLevelModifier = 0 ;
+	math recLevelModifier = level + 1 ;
+	math recLevelModifier = recLevelModifier / 4 ;
+	int rewardAdder = 0 ;
+	math rewardAdder = 9000 * recLevelModifier ;
+	math credits = credits + rewardAdder ;
+	
+	/* MULTIPLY, around 5x = regular mission multiplier */
+	math credits = credits * multiplier ;
+	
+	/* reward calculation - distance additional */
+	float distance = $freelanceDistance ;
+	float tempMinus = 0.0 ;
+	int pLevel = level ;
+	float kFactor = 0.35 ;
+	float pFloatLevel = 0.0 ;
+	float kDistance ;
+	if distance < 4500.0 
+		math tempMinus = 4500.0 - distance ;
+		math tempMinus = tempMinus / 100.0 ;
+		math tempMinus = tempMinus * 350.0 ;
+			if pLevel < 10
+				math pFloatLevel = pLevel / 10.0 ;
+				math kFactor = kFactor * pLevel ;
+				math kFactor = kFactor + 0.65 ;
+				math tempMinus = tempMinus * kFactor ;
+			endif
+		math credits = credits - tempMinus ;
+	else
+		math kDistance = 10000.0 - distance ;
+		if distance < 10000.0
+			math kDistance = kDistance / 5500.0 ;
+			math kDistance = 1 - kDistance ; 
+			math distance = kDistance * distance ;
+		endif
+		math credits = credits + distance ;
+	endif
+		
+	if credits < 4500
+		credits = 4500 ;
+	endif
+		
+		int rewardHostile = 0 ;
+		float3 pos = $freelanceDestPos ;
+		int align = 10 ;
+		int zoneDestWorldId = -1 ;
+		int zoneDestLocalId = -1 ;
+		str zoneDestMFaction = NONE ;
+		region GetZoneWorldFromPos pos zoneDestWorldId ;	
+		region GetZoneWorld regionDestKN zoneDestWorldId GetZoneId zoneDestLocalId ;
+		region GetZone regionDestKN zoneDestLocalId GetMajorFaction zoneDestMFaction ;
+		str jozaHardkodiraCONCORD ;
+		/* ovak treba */
+		ship GetPlayer GetFaction jozaHardkodiraCONCORD ;
+		game GetFactionVsFactionReputation jozaHardkodiraCONCORD zoneDestMFaction align ;
+		
+		/* ja nebi ovo
+		if align == 0
+			math rewardHostile = credits / 10 ;
+			math credits = credits + rewardHostile ;
+		endif */
+		if align == 2
+			math rewardHostile = credits / 4 ;
+			math credits = credits + rewardHostile ;
+		endif
+	
+	int state = 1 ;
+	str perkKeyname = freelancer ;
+	perk GetPerkVal perkKeyname state ;
+	if state == 1
+		math credits = credits * 1.35 ;
+	endif
+	/* THE FORCE UNLEASHED - Add additional Credits/XP */
+	math credits = credits * 3.01 ;
+	player AddCredits credits ;
+	
+	/*
+	PrintMessageVar level: INT level ;
+	PrintMessageVar credits: INT levelCredits ;
+	PrintMessageVar credits: INT credits ;
+	PrintMessageVar multiplier: FLOAT multiplier ;
+	*/
+	/* calculate exp based on credits gained */
+	int exp = 0 ;
+	
+	/* TEMP CHANGE math exp = credits * 0.023 ; */
+	math exp = credits * 0.025  ;
+	/* math exp = credits * 0.0125 ; */
+	/* FIRST ITTERATION math exp = credits * 0.014 ; */
+	math exp = exp * 3.01 ;
+	player AddExp exp ;
+	
+	screen SetWarningsState 1 exp credits 0 0 0 ;
+	/* str nothing = -1 ;
+	screen ShowWarnings nothing nothing nothing ; */
+
+End

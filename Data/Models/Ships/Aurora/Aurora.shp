@@ -1,0 +1,292 @@
+txt	
+ShipModel:	
+{	
+		Name:	Data\Models\Ships\Aurora\Aurora.asb
+}	
+ShipBase:	
+{	
+		Name:	Aurora
+		Value:	350000
+		Maneuver:	1.80
+		Hull:	1500.00
+		Cargo:	95
+		Crew:	15
+		Hangar:	0
+		Cloak:	0
+		Descript:	CHA_AURORA_TXT
+		Soak:	0.05
+		Mass:	2.00
+		AngularDamping:	0.00
+		Evasion:	0.10
+		LandingPoint:	0.00	-1.19	0.00
+}	
+ShipEffectPoints:	
+{	
+	No:	16
+	0.84	-1.30	5.53
+	2.45	-1.32	5.13
+	2.46	-2.28	1.17
+	3.06	1.61	1.43
+	3.28	0.00	-1.78
+	3.58	-1.77	-4.51
+	2.55	0.10	-4.86
+	1.37	0.17	-5.89
+	-0.84	-1.30	5.53
+	-2.45	-1.32	5.13
+	-2.46	-2.28	1.17
+	-3.06	1.61	1.43
+	-3.28	0.00	-1.78
+	-3.58	-1.77	-4.51
+	-2.55	0.10	-4.86
+	-1.37	0.17	-5.89
+}	
+ShipTrails:	
+{	
+	Particles:	1
+	TrailModelsStart:	8
+	TrailModels:	1
+	TrailSizeMin:	0.40
+	TrailSizeMax:	2.00
+	Trail:	
+	{	
+		TrailLengthMax:	100.0
+		Position:	0.00	0.48	-0.90
+		Width:	0.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		TrailLengthMax:	100.0
+		Position:	0.00	0.01	-1.0
+		Width:	0.500
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.00	0.04	0.07
+	}	
+	Trail:	
+	{	
+		TrailLengthMax:	20.0
+		Position:	3.06	-0.07	0.09
+		Width:	0.1
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.02	0.02	0.02
+	}
+	Trail:	
+	{	
+		TrailLengthMax:	20.0
+		Position:	-1.65	0.38	0.06
+		Width:	0.1
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.02	0.02	0.02
+	}
+	Trail:	
+	{	
+		TrailLengthMax:	10.0
+		Position:	-1.10	-0.67	-0.65
+		Width:	0.05
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.02	0.02	0.02
+	}
+	Trail:	
+	{	
+		TrailLengthMax:	10.0
+		Position:	1.10	-0.67	-0.65
+		Width:	0.05
+		EndFadeFactor:	1
+		PatchId:	0
+		Color:	0.02	0.02	0.02
+	}
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.00	0.50	-0.84
+	}	
+	PTEParticleEmitter:	
+	{	
+		Size:	0
+		Position:	0.00	0.00	-0.92
+	}	
+}	
+ShipWeapons:	
+{	
+	WeaponsPower:	30.00
+	WeaponsPowerRefill:	7.50
+	WeaponsPowerDownTime:	2.00
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-0.90	0.53	0.31
+			Rotation:	0.00	0.00	0.00
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	1.20
+			VerticalArcMinus:	1.00
+			VerticalArcPlus:	3.10
+		}	
+		TurretSlot:	
+		{	
+			Position:	0.72	0.52	0.11
+			Rotation:	0.00	0.00	0.00
+			Scale:	0
+			HorizontalArcMinus:	0.90
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.46
+			VerticalArcPlus:	3.00
+		}	
+		TurretSlot:	
+		{	
+			Position:	-0.90	0.21	0.32
+			Rotation:	0.00	0.00	3.14
+			Scale:	0
+			HorizontalArcMinus:	0.90
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.63
+			VerticalArcPlus:	0.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	1.37	-0.18	0.14
+			Rotation:	0.00	0.00	3.14
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	1.00
+			VerticalArcMinus:	0.68
+			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+}	
+ShipHeavyWeapons:	
+{	
+	HeavyWeaponBattery:	
+	{	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.00	-0.88	0.77
+			Rotation:	0.00	0.00	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	10
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+}	
+PowerCore:	
+{	
+	Hp:	100.00
+	Firewall:	0.30
+	Power:	100.00
+	EnergyRecharge:	1.00
+	Feedback:	0.00
+}	
+Propulsion:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	Speed:	60.00
+	Acceleration:	1.00
+	PowerToEngines:	1.50
+}	
+Sensors:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	SensorRadius:	2000.00
+	Detection:	0.10
+}	
+Grappler:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	GrappleRange:	230.00
+	Overload:	0.00
+}	
+Transporter:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	TransportRange:	1000.00
+	Capacity:	8.00
+	Deflection:	0.00
+}	
+Hangar:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	PreLaunch:	0.00
+	Fuel:	0.00
+	WingNo:	0
+}	
+Cloak:	
+{	
+	Hp:	100.00
+	Firewall:	0.00
+	CloakStrength:	0.50
+	ClaokStability:	0.50
+}	
+ShipShields:	
+{	
+	Strength:	1750.00
+	Recharge:	8.75
+	Reboot:	2.50
+	HP:	100.00
+	Firewall:	0.00
+	Biometric:	0.20
+	ResistanceEnergy:	0.15
+	ResistanceProjectile:	0.60
+	ResistancePlasma:	0.85
+	ResistanceRadiation:	0.20
+	ResistanceEMP:	0.15
+}	
+ShipShieldsMesh:	
+{	
+	MeshName:	Data\Models\Sphere\ShipSphereShield7_2.mdl
+	Scale: 6.00	3.00	4.00
+	Position: 0.75	0.00	0.00
+
+}	
+ShipDerelict:	
+{	
+	Derelict:	AURORA
+}	
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnTDriveEnd:	Data\SpecialEffect\TDriveFlash\deactivation.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}	
+MountedCamera:	
+{	
+	Position:	0.00	1.99	-3.90
+	HorizontalOffset:	0.00
+	VerticalOffset:	-0.00
+	FrontCamPosition: 0.00	-1.00	-7.50
+}	

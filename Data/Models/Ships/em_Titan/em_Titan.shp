@@ -8,7 +8,7 @@ ShipBase:
 		Name:	Titan_SD
 		Value:	130000000
 		Maneuver:	0.10
-		Hull:	250000.00
+		Hull:	250001.00
 		Cargo:	700
 		Crew:	250
 		Hangar:	3
@@ -704,7 +704,7 @@ Cloak:
 }	
 ShipShields:	
 {	
-	Strength:	120500.00
+	Strength:	100500.00
 	Recharge:	500.00
 	Reboot:	12.00
 	HP:	14550.00

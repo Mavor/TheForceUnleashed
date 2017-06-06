@@ -127,6 +127,20 @@ array str testStringArray ;
 		customShip = 1 ;
 	endif
 
+	if maxHull == 250001
+ 		PrintMessage __________ ;
+		PrintMessage Found_TFU_TitanSB__Modifying_Turrets ;
+
+		tempLeftNum = 36 ;
+		tempRightNum = 8 ;
+		tempFrontNum = 6 ;
+		tempBackNum = 6 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWMTL TFL_S_SHTL TFL_SHTL TFL_SHTL ;
+		customShip = 1 ;
+	endif
+
 	if customShip == 1
 		PrintMessage CUSTOM_SHIP_FOUND____ADDING_TURRETS ;
 		l_battery = 0 ;

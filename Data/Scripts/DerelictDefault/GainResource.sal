@@ -1,0 +1,81 @@
+str type = $resGainMatType ;
+int varExist = 2 ;
+int varExist2 = 2 ;
+globalVar CheckExist $resGainMat varExist ;
+globalVar CheckExist $tempResGainCredits varExist2 ;
+
+if varExist == 0
+	globalVar int $resGainMat = 0 ;
+endif
+if varExist2 == 0
+	globalVar int $tempResGainCredits = 0 ;
+endif
+
+int mats = 0 ;
+int credits = 0 ;
+PrintMessageVar ResourceType: STR type ;
+
+int block4x = 0 ;
+game GetBlock4XContent block4x ;
+
+if block4x != 0
+	exit 0 ;
+endif
+
+if type == NONE
+	exit 0 ;
+endif
+
+/* formula */
+int defMats = 10 ;
+float defRad = 2.0 ;
+float diff = 0.0 ;
+float radius = 0.0 ;
+float matsMin = 0.9 ;
+float matsMax = 1.1 ;
+float creditsMin = 0.8 ;
+float creditsMax = 1.2 ;
+
+derelict GetParent GetRadius radius ;
+math diff = radius / defRad ;
+math mats = defMats + diff ;
+math matsMin = matsMin * mats ;
+math matsMax = matsMax * mats ;
+math mats = Rnd matsMin matsMax ;
+
+math credits = defMats + diff ;
+math creditsMin = creditsMin * credits ;
+math creditsMax = creditsMax * credits ;
+math credits = Rnd creditsMin creditsMax ;
+math credits = credits * 12000 ;
+
+/* THE FORCE UNLEASHED - ADD CREDIT REWARD - Make radius more important*/
+float derDest = 0.85 ;
+float derSalv = 1.05 ;
+if type == derDestroy
+	math mats = mats * derDest ;
+endif
+if type == derSalvage
+	math mats = mats * derSalv ;
+endif
+
+int salvager1Active = 0 ;
+int salvager2Active = 0 ;
+float salvagerMod = 1.0 ;
+perk GetPerkVal salvager salvager1Active ;
+if salvager1Active == 1
+	salvagerMod = 1.25 ;
+	math mats = mats * salvagerMod ;
+endif
+perk GetPerkVal salvager2 salvager2Active ;
+if salvager2Active == 1
+	salvagerMod = 1.5 ;
+	math mats = mats * salvagerMod ;
+endif
+
+globalVar $resGainMat = mats ;
+globalVar $tempResGainCredits = credits ;
+script Data\Scripts\DerelictDefault\ShowResourceGain.sal ;
+
+End
+

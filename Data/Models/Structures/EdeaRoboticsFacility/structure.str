@@ -1,0 +1,47 @@
+txt
+Param:	
+{	
+	Sort:	SRT_LANDMARK_EDEA
+	PulseTime:	10.00
+	EnterRadius:	3000.00
+	ExitRadius:	3500.00
+	Destructible:	0
+	OnDestroy:	Data\Scripts\StructureDefault\OnDestroy.sal
+	OnActivate:	Data\Models\Structures\EdeaRoboticsFacility\SCR_activate.sal
+	OnDeactivate:	Data\Models\Structures\EdeaRoboticsFacility\SCR_deactivate.sal
+	OnScan:	Data\Scripts\StructureDefault\OnScan.sal
+	OnTransport:	Data\Scripts\StructureDefault\OnTransport.sal
+	OnHack:	Data\Scripts\StructureDefault\OnHack.sal
+	OnEnter:	Data\Scripts\StructureDefault\OnEnter.sal
+	OnExit:	Data\Scripts\StructureDefault\OnExit.sal
+	OnHP75:	Data\Scripts\StructureDefault\OnHp75.sal
+	OnHP50:	Data\Scripts\StructureDefault\OnHp50.sal
+	OnHP25:	Data\Scripts\StructureDefault\OnHp25.sal
+	OnHail:	Data\Scripts\StructureDefault\OnHail.sal
+	OnPulse:	Data\Scripts\StructureDefault\OnPulse.sal
+	OnRepair:	Data\Scripts\StructureDefault\OnRepair.sal
+	OnConstruction0:	Data\Scripts\StructureDefault\OnConstruction0.sal
+	OnConstruction50:	Data\Scripts\StructureDefault\OnConstruction50.sal
+	OnConstruction100:	Data\Scripts\StructureDefault\OnConstruction100.sal
+	BuildStatus:	2
+	BuildLevel:	0
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\EdeaRoboticsFacility\EDEAROBOTICSFACILITY.asb
+		Hull:	10000
+		Name:	LM_EDEA
+		Descript:	SRT_LANDMARK_EDEA
+		ConstructionTimeRequired:	500.0
+		OreConstructionCost:	10000
+		GasConstructionCost:	4750
+		MaterialConstructionCost:	4750
+		OreYield:	0.0
+		GasYield:	0.0
+		MaterialYield:	0.0
+		ShipBuildingTimeReduction:	60.0
+	}
+	AmbientSound:
+	{
+		SoundName:		STR_Research_Loop
+	}
+}

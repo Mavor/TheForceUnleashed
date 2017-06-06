@@ -1,0 +1,178 @@
+txt	
+ShipModel:	
+{	
+		Name:	Data\Models\Ships\Proxima\proxima.asb
+}	
+ShipBase:	
+{	
+		Name:	Exemplar
+		Value:	6445000
+		Maneuver:	1.05
+		Hull:	192000.00
+		Cargo:	315
+		Crew:	52
+		Hangar:	0
+		Cloak:	0
+		Descript:	1005
+		Soak:	0.00
+		Mass:	100.00
+		AngularDamping:	0.00
+		Evasion:	0.10
+}	
+ShipEffectPoints:	
+{	
+	No:	16
+	0.84	-1.30	5.53
+	2.45	-1.32	5.13
+	2.46	-2.28	1.17
+	3.06	1.61	1.43
+	3.28	0.00	-1.78
+	3.58	-1.77	-4.51
+	2.55	0.10	-4.86
+	1.37	0.17	-5.89
+	-0.84	-1.30	5.53
+	-2.45	-1.32	5.13
+	-2.46	-2.28	1.17
+	-3.06	1.61	1.43
+	-3.28	0.00	-1.78
+	-3.58	-1.77	-4.51
+	-2.55	0.10	-4.86
+	-1.37	0.17	-5.89
+}	
+
+
+ShipWeapons:	
+{	
+	WeaponsPower:		35.00
+	WeaponsPowerRefill:	7.00
+	WeaponsPowerDownTime:	1.50
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{	
+	}	
+	WeaponBattery:	
+	{		
+	}	
+}	
+ShipHeavyWeapons:	
+{	
+	HeavyWeaponBattery:	
+	{	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+	HeavyWeaponBattery:	
+	{	
+		Launcher:	
+		{	
+			Position:	0.00	-0.36	1.80
+			Rotation:	0.00	0.00	0.00
+			HorizontalArcMinus:	0.70
+			HorizontalArcPlus:	0.70
+			VerticalArcMinus:	0.70
+			VerticalArcPlus:	0.70
+			Ammo:	8
+		}	
+	}	
+	HeavyWeaponBattery:	
+	{	
+	}	
+}	
+PowerCore:	
+{	
+	Hp:	150.00
+	Firewall:	0.30
+	Power:	55.00
+	EnergyRecharge:	1.00
+	Feedback:	0.00
+}	
+Propulsion:	
+{	
+	Hp:	150.00
+	Firewall:	0.00
+	Speed:	60.00
+	Acceleration:	1.00
+	PowerToEngines:	3.75
+}	
+Sensors:	
+{	
+	Hp:	150.00
+	Firewall:	0.00
+	SensorRadius:	2000.00
+	Detection:	0.10
+}	
+Grappler:	
+{	
+	Hp:	150.00
+	Firewall:	0.00
+	GrappleRange:	230.00
+	Overload:	0.00
+}	
+Transporter:	
+{	
+	Hp:	150.00
+	Firewall:	0.00
+	TransportRange:	1000.00
+	Capacity:	10.00
+	Deflection:	0.00
+}	
+Hangar:	
+{	
+	Hp:	0.00
+	Firewall:	0.00
+	PreLaunch:	0.00
+	Fuel:	0.00
+	WingNo:	0
+}	
+Cloak:	
+{	
+	Hp:	0.00
+	Firewall:	0.00
+	CloakStrength:	0.50
+	ClaokStability:	0.50
+}	
+ShipShields:	
+{	
+	Strength:	1000.00
+	Recharge:	5.00
+	Reboot:	2.50
+	HP:	150.00
+	Firewall:	0.00
+	Biometric:	0.20
+	ResistanceEnergy:	0.00
+	ResistanceProjectile:	0.00
+	ResistancePlasma:	0.00
+	ResistanceRadiation:	0.20
+	ResistanceEMP:	0.15
+}	
+ShipShieldsMesh:	
+{	
+	MeshName:	Data\Models\Ships\Exemplar\shield.mdl
+}
+ShipDerelict:	
+{	
+	DerelictId:	67
+}	
+Events:	
+{	
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnTDriveEnd:	Data\SpecialEffect\TDriveFlash\deactivation.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}	
+MountedCamera:	
+{	
+	Position:	-0.00	4.99	-9.90
+	HorizontalOffset:	0.00
+	VerticalOffset:	-0.00
+	FrontCamPosition: 0.00	-1.00	-7.50
+}

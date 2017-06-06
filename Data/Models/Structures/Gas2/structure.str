@@ -1,0 +1,74 @@
+txt
+Param:	
+{	
+	Sort:	SRT_GAS
+	PulseTime:	10.00
+	EnterRadius:	3000.00
+	ExitRadius:	3500.00
+	Destructible:	0
+	OnDestroy:	Data\Scripts\StructureDefault\OnDestroy.sal
+	OnActivate:	Data\Models\Structures\Gas2\SCR_activate.sal
+	OnDeactivate:	Data\Models\Structures\Gas2\SCR_deactivate.sal
+	OnScan:	Data\Scripts\StructureDefault\OnScan.sal
+	OnTransport:	Data\Scripts\StructureDefault\OnTransport.sal
+	OnHack:	Data\Scripts\StructureDefault\OnHack.sal
+	OnEnter:	Data\Scripts\StructureDefault\OnEnter.sal
+	OnExit:	Data\Scripts\StructureDefault\OnExit.sal
+	OnHP75:	Data\Scripts\StructureDefault\OnHp75.sal
+	OnHP50:	Data\Scripts\StructureDefault\OnHp50.sal
+	OnHP25:	Data\Scripts\StructureDefault\OnHp25.sal
+	OnHail:	Data\Scripts\StructureDefault\OnHail.sal
+	OnPulse:	Data\Scripts\StructureDefault\OnPulse.sal
+	OnRepair:	Data\Scripts\StructureDefault\OnRepair.sal
+	OnConstruction0:	Data\Scripts\StructureDefault\OnConstruction0.sal
+	OnConstruction50:	Data\Scripts\StructureDefault\OnConstruction50.sal
+	OnConstruction100:	Data\Scripts\StructureDefault\OnConstruction100.sal
+	BuildStatus:	2
+	BuildLevel:	0
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\Gas2\GAS_FACILITY2.asb
+		Hull:	10000
+		Name:	gas1
+		Descript:	gasCollector
+		ConstructionTimeRequired:	250.0
+		OreConstructionCost:	500
+		GasConstructionCost:	100
+		MaterialConstructionCost:	300
+		OreYield:	0.0
+		GasYield:	185.0
+		MaterialYield:	0.0
+	}
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\Gas2\GAS_FACILITY2UPGRADE2.asb
+		Hull:	10000
+		Name:	gas1
+		Descript:	gasCollector
+		ConstructionTimeRequired:	600.0
+		OreConstructionCost:	2500
+		GasConstructionCost:	300
+		MaterialConstructionCost:	600
+		OreYield:	0.0
+		GasYield:	410.0
+		MaterialYield:	0.0
+	}
+	Tier:
+	{
+		WhaleModel:	Data\Models\Structures\Gas2\GAS_FACILITY2UPGRADE3.asb
+		Hull:	10000
+		Name:	gas1
+		Descript:	gasCollector
+		ConstructionTimeRequired:	960.0
+		OreConstructionCost:	7500
+		GasConstructionCost:	500
+		MaterialConstructionCost:	1000
+		OreYield:	0.0
+		GasYield:	605.0
+		MaterialYield:	0.0
+	}
+	AmbientSound:
+	{
+		SoundName:		STR_Gas_Loop
+	}
+}
