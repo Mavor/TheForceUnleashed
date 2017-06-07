@@ -57,52 +57,68 @@ scriptparent 2 keyName ;
 	array str weaponArray ;
 	array str heavyWeaponArray ;
 	array str fightersArray ;
-	if level < 10
-		array Add weaponArray WARD1 REM1 N3000_1 NPC1 TESLA1 SBR1 WARD2 N3000_2 REM2 ;
+
+	int shipClass2 ;
+		
+	/* THE FORCE UNLEASHED - Split Weapons based on class */
+	ship GetParent GetClass shipClass2 ;
+
+	/* Low / Mid / High Sub-Capitals */
+	if level < 10 && shipClass2 < 5
+		array Add weaponArray SPLITTER3 OMEGA3 DISPOSER2 BENDER2 ERASER1 CYCLER RAZOR3 SCYTHE3 RIPPER2 ;
 		array Add heavyWeaponArray MAGNETON MONGOOSE SINGULARITY ;
-	endif
-	if level >= 10 && level < 20
-		array Add weaponArray MELTER1 FLAIL1 DUSTER1 NPC2 TESLA2 SBR2 WARD3 N3000_3 REM3 ;
-		array Add heavyWeaponArray HEPHESTUS REVERY LANCER ;
-	endif
-	if level >= 20 && level < 30
-		array Add weaponArray N6000_1 RAZOR1 SCYTHE1 NPC3 MELTER2 TESLA3 FLAIL2 SBR3 DUSTER2 ;
-		array Add heavyWeaponArray ANDROMEDA BANDICOOT PULVERIZER ;
-		array Add fightersArray COUGAR DELTA ;
-	endif
-	if level >= 30 && level < 40
-		array Add weaponArray MELTER3 VOID1 SPLITTER1 FLAIL3 N6000_2 RAZOR2 RIPPER1 DUSTER3 SCYTHE2 ;
-		array Add heavyWeaponArray CERBERUS HAMMER SENTINEL ;
 		array Add fightersArray COBRA HEDGEHOG ;
 	endif
-	if level >= 40 && level < 50
-		array Add weaponArray N6000_3 RAZOR3 HOPE1 OMEGA1 SCYTHE3 BARRAGE1 VOID2 SPLITTER2 RIPPER2 ;
-		array Add heavyWeaponArray ION_CANNON JACKRABBIT QUASAR ;
-		array Add fightersArray APEX THORN ;
-	endif
-	if level >= 50 && level < 60
-		array Add weaponArray DISPOSER1 FLUX1 TORCH1 BENDER1 PENANCE1 VOID3 SPLITTER3 HOPE2 OMEGA2 ; 
-		array Add heavyWeaponArray GAUSS CORONA BLAZAR ;
+	if level >= 10 && level < 60 && shipClass2 < 5
+		array Add weaponArray SPLITTER3 OMEGA3 DISPOSER2 QUARK BENDER2 ERASER2 DISPOSER3 BARRAGE3 TORRENT2 ;
+		array Add heavyWeaponArray HEPHESTUS REVERY LANCER ;
 		array Add fightersArray RHINO ELYPSO ;
 	endif
-	if level >= 60 && level < 70
+	if level >= 60 && shipClass2 < 5
 		/* WIP */
-		array Add weaponArray TORRENT1 RIPPER3 BARRAGE2 ERASER1 SAGE1 HATRED1 DISPOSER2 FLUX2 TORCH2 ;
+		array Add weaponArray refitMalcheor_III ERASER3 PSYCH refitMalcheor_II BENDER3 DISPOSER3 ERASER2 TORCH3 HATRED3 ;
 		array Add heavyWeaponArray HYPNOS JUDGEMENT NOMAD ;
-		array Add fightersArray TYPHOON MEDIATOR ;
-	endif
-	if level >= 70 && level < 80
-		/* WIP */
-		array Add weaponArray HOPE3 OMEGA3 BARRAGE3 BENDER2 PENANCE2 TORRENT2 ERASER2 SAGE2 DISPOSER3 ;
-		array Add heavyWeaponArray XERXES MOHAWK ICARUS ;
-		array Add fightersArray OMEGA BOSON ;
-	endif
-	if level >= 80
-		/* WIP */
-		array Add weaponArray FLUX3 HATRED2 TORCH3 BENDER3 PENANCE3 TORRENT3 ERASER3 SAGE3 HATRED3 ;
-		array Add heavyWeaponArray ACOLYTE SERAPHEEN POLARIS ;
 		array Add fightersArray LIGHTNING ZOEX ;
 	endif
+
+
+	/* Low / Mid / High Capitals */
+	if level < 10 && shipClass2 >= 5 && shipClass2 < 8
+		array Add weaponArray SPLITTER3 OMEGA3 RIPPER3 refitSeverance_I BARRAGE2 TRIMMER HATRED1 PEACEKEEPER3 FLUX3 ;
+		array Add heavyWeaponArray MAGNETON MONGOOSE SINGULARITY ;
+		array Add fightersArray COBRA HEDGEHOG ;
+	endif
+	if level >= 10 && level < 60 && shipClass2 >= 5 && shipClass2 < 8
+		array Add weaponArray BENDER2 ERASER2 BARRAGE3 TORRENT2 refitSeverance_II TORCH3 HATRED2 PENANCE3 REQUIEM3 FLUX3 ;
+		array Add heavyWeaponArray HEPHESTUS REVERY LANCER ;
+		array Add fightersArray RHINO ELYPSO ;
+	endif
+	if level >= 60 && shipClass2 >= 5 && shipClass2 < 8
+		/* WIP */
+		array Add weaponArray ERASER3 PSYCH HATRED3 HYDRA TORRENT3 refitSeverance_III TORCH3 TERMINATOR SAGE3 REQUIEM3 ;
+		array Add heavyWeaponArray HYPNOS JUDGEMENT NOMAD ;
+		array Add fightersArray LIGHTNING ZOEX ;
+	endif
+
+
+	/* Low / Mid / High Super Capitals */
+	if level < 10 && shipClass2 >= 8
+		array Add weaponArray SPLITTER3 BARRAGE2 REQUIEM3 SAGE3 SAGE2 FLUX3 HOPE3 DESTINY refitAphophis_I ;
+		array Add heavyWeaponArray MAGNETON MONGOOSE SINGULARITY ;
+		array Add fightersArray COBRA HEDGEHOG ;
+	endif
+	if level >= 10 && level < 60 && shipClass2 >= 8
+		array Add weaponArray BENDER2 BARRAGE3 TORCH3 SAGE3 REQUIEM3 SAGE2 JUSTICE HONOR3 REQUIEM2 ;
+		array Add heavyWeaponArray HEPHESTUS REVERY LANCER ;
+		array Add fightersArray RHINO ELYPSO ;
+	endif
+	if level >= 60 && shipClass2 >= 8
+		/* WIP */
+		array Add weaponArray ERASER3 HATRED3 TORRENT3 SAGE3 LAVA_SHARDS REQUIEM3 PENANCE3 refitAphophis_III PEACEKEEPER3 ;
+		array Add heavyWeaponArray HYPNOS JUDGEMENT NOMAD ;
+		array Add fightersArray LIGHTNING ZOEX ;
+	endif
+
 
 /* Assign Light weapons */
 int l_battery = 0 ;
@@ -379,9 +395,6 @@ int imax ;
  int maxHull = 0.0 ; 
  int customShip = 0 ;
 
- int l_battery = 0 ;
- int weaponId = 27 ;
-
  int tempLeftNum = 0 ;
  int tempRightNum = 0 ;
  int tempFrontNum = 0 ;
@@ -390,9 +403,8 @@ int imax ;
  array str weaponTypes ;
  array Add weaponTypes SWHTL SWHTL SWHTL SWHTL ;
 
- ship GetByKeyName keyName GetHPMax maxHull ;
+ ship GetParent GetHPMax maxHull ;
 
-/*Intersector*/
  	if maxHull == 2801
  		PrintMessage __________ ;
 		PrintMessage Found_Fractal_Intersector__Modifying_Turrets ;
@@ -481,34 +493,34 @@ int imax ;
 	if customShip == 1
 		PrintMessage CUSTOM_SHIP_FOUND____ADDING_TURRETS ;
 		l_battery = 0 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempLeftNum ;
+		ship GetParent GetWeaponsBattery SetTuretsNo l_battery tempLeftNum ;
 
 		l_battery = 1 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempRightNum ;
+		ship GetParent GetWeaponsBattery SetTuretsNo l_battery tempRightNum ;
 
 		l_battery = 2 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempFrontNum ;
+		ship GetParent GetWeaponsBattery SetTuretsNo l_battery tempFrontNum ;
 
 		l_battery = 3 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetTuretsNo l_battery tempBackNum ;
+		ship GetParent GetWeaponsBattery SetTuretsNo l_battery tempBackNum ;
 
 
 
 		array Get weaponTypes tempWeaponType 0 ;
 		l_battery = 0 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
 
 		array Get weaponTypes tempWeaponType 1 ;
 		l_battery = 1 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
 
 		array Get weaponTypes tempWeaponType 2 ;
 		l_battery = 2 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
 
 		array Get weaponTypes tempWeaponType 3 ;
 		l_battery = 3 ;
-		ship GetByKeyName keyName GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+		ship GetParent GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
 
 		customShip = 0 ;
 	endif
