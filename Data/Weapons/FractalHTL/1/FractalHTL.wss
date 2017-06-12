@@ -1,11 +1,11 @@
 Sort:	1
 Lenght:	20.0
 Speed:	485
-BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalHTL\1\FractalHTLBeam.par
+BeamFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\FractalHTL\1\FractalHTLBeam.par
 
 Particle:
 {
-	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalHTL\1\FractalHTL.par
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\FractalHTL\1\FractalHTL.par
 	ParticleSort:	5
 	ParticleTimer:	0.1
 }

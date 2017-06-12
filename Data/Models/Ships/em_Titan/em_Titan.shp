@@ -5,7 +5,7 @@ ShipModel:
 }	
 ShipBase:	
 {	
-		Name:	Titan_SD
+		Name:	Titan SB
 		Value:	130000000
 		Maneuver:	0.10
 		Hull:	250001.00
@@ -13,7 +13,7 @@ ShipBase:
 		Crew:	250
 		Hangar:	3
 		Cloak:	0
-		Descript:	FAC_unknown_TXT
+		Descript:	1005
 		Soak:	0.05
 		Mass:	520.00
 		AngularDamping:	0.00
@@ -724,7 +724,7 @@ ShipShieldsMesh:
 }	
 ShipDerelict:	
 {	
-	Derelict:	gunship1
+	Derelict:	EMTITAN
 }	
 Events:	
 {	

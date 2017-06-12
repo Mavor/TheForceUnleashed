@@ -1,0 +1,64 @@
+txt:	
+FrustumRadius:	4.50
+Mobility:	0
+Mass:	1.00
+Hittable:	0
+HitSphereDistance:	1000.00
+HitModelDistance:	1000.00
+AABBUse:	0
+AABBCenter:	0.00	0.00	0.00
+AABBSize:	1.00	1.00	1.00
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\Emp_MTTL\Base.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\Emp_MTTL\Neck.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\Emp_MTTL\Head.mdl
+	Position:	0.00	0.22	0.18
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+Dummy:	
+{	
+	Position:	0.097	-0.041	0.963
+}	
+Dummy:	
+{	
+	Position:	0.00	-0.041	0.963
+}	
+Dummy:	
+{	
+	Position:	-0.097	-0.041	0.963
+}	
+Waypoints:	
+{	
+	DroneSpawnPosition:	0.00	0.00	0.00
+	DroneScale:	1.00
+	DataFile:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\Emp_MTTL\sw_Emp_MTTL.mg
+}	

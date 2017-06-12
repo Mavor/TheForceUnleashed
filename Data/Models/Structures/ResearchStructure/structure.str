@@ -38,7 +38,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	0.0
 		MaterialYield:	0.0
-		ShipBuildingTimeReduction:	4.0
+		ShipBuildingTimeReduction:	10.0
 	}
 	Tier:
 	{
@@ -53,7 +53,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	0.0
 		MaterialYield:	0.0
-		ShipBuildingTimeReduction:	10.0
+		ShipBuildingTimeReduction:	20.0
 	}
 	AmbientSound:
 	{

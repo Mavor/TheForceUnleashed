@@ -1,19 +1,19 @@
 Sort:	1
 Lenght:	15.0
 Speed:	450
-BeamFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalSBIC\SBIonCannonBeam.par
+BeamFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\FractalSBIC\SBIonCannonBeam.par
 
 
 
 Particle:
 {
-	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalSBIC\SBIonCannonSparcles.par
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\FractalSBIC\SBIonCannonSparcles.par
 	ParticleSort:	1
 	ParticleTimer:	1.3
 }
 Particle:
 {
-	ParticleFileName:	Mods\TheForceUnleashed\Data\Weapons\FractalSBIC\SBIonCannon.par
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\FractalSBIC\SBIonCannon.par
 	ParticleSort:	5
 	ParticleTimer:	0.1
 }

@@ -4,19 +4,19 @@ Material:
 		Shader:	XYZNTUV	data\shaders\pbr\spg_pbr_shader.fx
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\turrets\fracmtl\sw_fractal_mtl_diff.dds
+			Name:	mods\sw_warlordsofgemini\data\models\turrets\fracmtl\sw_fractal_mtl_diff.dds
 			Slot:	0
 			Type:	FromFile
 		}
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\turrets\fracmtl\sw_fractal_mtl_norm.dds
+			Name:	mods\sw_warlordsofgemini\data\models\turrets\fracmtl\sw_fractal_mtl_norm.dds
 			Slot:	1
 			Type:	FromFile
 		}
 		Texture:
 		{
-			Name:	mods\TheForceUnleashed\data\models\turrets\fracmtl\sw_fractal_mtl_spec.dds
+			Name:	mods\sw_warlordsofgemini\data\models\turrets\fracmtl\sw_fractal_mtl_spec.dds
 			Slot:	2
 			Type:	FromFile
 		}

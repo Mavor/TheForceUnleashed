@@ -19,25 +19,25 @@ PrimaryWeapons:
 	{	
 		Sort:	0
 		Turrets:	36
-		Weapon:	14
+		Weapon:	102
 	}	
 	Battery:	
 	{	
 		Sort:	1
 		Turrets:	8
-		Weapon:	52
+		Weapon:	140
 	}	
 	Battery:	
 	{	
 		Sort:	2
 		Turrets:	6
-		Weapon:	90
+		Weapon:	140
 	}	
 	Battery:	
 	{	
 		Sort:	3
 		Turrets:	6
-		Weapon:	90
+		Weapon:	140
 	}	
 }	
 SecundaryWeapons:	

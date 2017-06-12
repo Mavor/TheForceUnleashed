@@ -5,10 +5,10 @@ Profession:	Security
 Hull:	250000.00
 Crew:	250
 Skills:	2
-Level:	20
+Level:	80
 CombatAI:	0
 LootDrop:	0
-CargoValue:	500
+CargoValue:	800
 Veteran:	0
 CustomBannersId:	0
 CustomColorBanners:	1.00	0.64	0.05	1.00
@@ -24,26 +24,26 @@ PrimaryWeapons:
 	Battery:	
 	{	
 		Sort:	0
-		Turrets:	0
-		Weapon:	0
+		Turrets:	36
+		Weapon:	102
 	}	
 	Battery:	
 	{	
 		Sort:	1
-		Turrets:	0
-		Weapon:	0
+		Turrets:	8
+		Weapon:	140
 	}	
 	Battery:	
 	{	
 		Sort:	2
-		Turrets:	3
-		Weapon:	8
+		Turrets:	6
+		Weapon:	140
 	}	
 	Battery:	
 	{	
 		Sort:	3
-		Turrets:	0
-		Weapon:	0
+		Turrets:	6
+		Weapon:	140
 	}	
 }	
 SecundaryWeapons:	

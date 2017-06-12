@@ -1,0 +1,19 @@
+Sort:	1
+Lenght:	20.0
+Speed:	400
+BeamFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\EMP_HDTL\1\EMPHDTLBeam.par
+
+Particle:
+{
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\EMP_HDTL\1\EMPHDTL.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+CentralY:	0
+Duration:	1.0
+
+Sound:
+{
+	Shot:	Heavyturbo1A	
+}

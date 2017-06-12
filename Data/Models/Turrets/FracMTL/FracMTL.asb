@@ -11,7 +11,7 @@ AABBSize:	1.00	1.00	1.00
 StaticMesh:	
 {	
 	Instanced:	0
-	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\FracMTL\Base.mdl
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\FracMTL\Base.mdl
 	Position:	0.00	0.00	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
@@ -23,7 +23,7 @@ StaticMesh:
 StaticMesh:	
 {	
 	Instanced:	0
-	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\FracMTL\Neck.mdl
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\FracMTL\Neck.mdl
 	Position:	0.00	0.00	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
@@ -35,7 +35,7 @@ StaticMesh:
 StaticMesh:	
 {	
 	Instanced:	0
-	MeshName:	Mods\TheForceUnleashed\Data\Models\Turrets\FracMTL\Head.mdl
+	MeshName:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\FracMTL\Head.mdl
 	Position:	0.00	0.23	-0.19
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
@@ -56,5 +56,5 @@ Waypoints:
 {	
 	DroneSpawnPosition:	0.00	0.00	0.00
 	DroneScale:	1.00
-	DataFile:	Mods\TheForceUnleashed\Data\Models\Turrets\FracMTL\FracMTL.mg
+	DataFile:	Mods\SW_WarlordsofGemini\Data\Models\Turrets\FracMTL\FracMTL.mg
 }	

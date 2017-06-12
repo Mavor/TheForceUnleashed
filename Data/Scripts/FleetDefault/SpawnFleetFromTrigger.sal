@@ -1,0 +1,488 @@
+str name = NONE ;
+game GetFileName name ;
+PrintMessageVar START: STR name ;
+
+/* This script has to spawn Fleet when player enters the Fleet Trigger */
+/*
+	#1 Get Main Position
+	#2 Create Fleet
+	#3 Link Fleet
+	#4 Spawn Ships from the Fleet
+	#5 Setup Fleet
+
+*/
+
+/* Defining Variables */
+if 0 == 0
+	
+	float3 fleetPos ;
+	float3 fleetDest ;
+	
+	int varExist = 2 ;
+	globalVar CheckExist $cqFleetCounter varExist ;
+	if varExist == 0
+		globalVar int $cqFleetCounter = 0 ;
+	endif
+
+	int fleetSHPNum = 0 ;
+	int fleetSHPId = 0 ;
+	int fleetPLANum = 0 ;
+	int fleetPLAId = 0 ;
+	int shipCounter = 0 ;
+	int plaCounter = 0 ;
+	int counter = $cqFleetCounter ;
+	int align = 3 ;
+	int exist = 2 ;
+	int shipLevel = 0 ;
+	int numForm = 0 ;
+	int warId = 0 ;
+	int selected = 0 ;
+	int createSort = 0 ;
+	
+	str faction = NONE ;
+	str fleetKN = NONE ;
+	str KN = cq ;	
+	str KNFleet = _fleet ;
+	str shipBaseKN = NONE ;
+	str plaBaseKN = NONE ;
+	str shipKN = Shp ;
+	str plaKN = Pla ;
+	str shipKNFinal = NONE ;
+	str plaKNFinal = NONE ;
+	str warmasterKN = NONE ;
+	str wrmKN = NONE ;
+	str formation = TETRAHEDRON ;
+	str scriptPath = Data\Scripts\FleetDefault\OnWarFleetHail.sal ;
+	str scriptSHPDestroy = Data\Scripts\Conquest\PlanetaryAssault\Stage1\OnDestroyShip.sal ; /* OnDestroyShip Planetary */
+	str scriptPLADestroy = Data\Scripts\Conquest\PlanetaryAssault\Stage1\OnDestroyPlatform.sal ; /* OnDestroyPlatform Planetary */
+	
+	float shpRad = 0.0 ;
+	float formDensity = 0.0 ;
+	
+	array str fleetShipTemp ;
+	array str warmasters ;
+	array str formations ;
+	
+	str factionPlayer ;
+	
+	/* Planetary */
+	int cqSpawnedShipNum = $cqPlanetSpawnedShipNum ;
+	int cqCurrentShipNum = $cqPlanetCurrentShipNum ;
+	int cqCurrentPlaNum = $cqPlanetCurrentPlaNum ;
+	int cqWave = $cqPlanetWave ;
+	int cqWave3 = 1 ;
+	math cqWave3 = cqWave mod 3 ;
+	int rndWM = 0 ;
+	str planetKN = $cqPlanetKN ;
+	
+	
+	str playerFaction = NONE ;
+	ship GetPlayer GetFaction playerFaction ;
+	
+endif 
+
+/* Info Gathering */
+if 0 == 0
+	
+	/* example: cqFleetCONCORD0 */
+	fleetVirtual GetParent GetFaction faction ;
+	fleetVirtual GetParent GetCreateSort createSort ;
+	fleetVirtual GetParent GetShipsElemNum fleetSHPNum ;
+	fleetVirtual GetParent GetPlatformsElemNum fleetPLANum ;	
+
+	string fleetKN add KN faction ;
+	string fleetKN add fleetKN KNFleet ;
+	string fleetKN add fleetKN counter ;
+
+	player GetAlignByKeyName faction align ;
+	
+	/* UNUSED
+		CON_FRONT_INLINE
+		CON_SAFEGUARD
+	*/
+	
+	if fleetSHPNum > 40
+		array Add formations CON_COMPACT ;
+		array Add formations CON_DOUBLELINE ;
+		array Add formations CON_HEX ;
+		array Add formations CON_XARROW ;
+		array Add formations CLAW ;
+		array Add formations SCATTERED ;
+	endif
+	if fleetSHPNum > 20 && fleetSHPNum <= 40
+		array Add formations ARROW ;
+		array Add formations CON_INLINE ;
+		array Add formations W ;
+	endif
+	if fleetSHPNum > 0 && fleetSHPNum <= 20
+		array Add formations V ;
+		array Add formations TETRAHEDRON ;
+	endif
+	
+	if numForm > 0
+		array GetElementNum formations numForm ;
+		math numForm = numForm - 1 ;
+		math selected = Rnd 0 numForm ;
+		array Get formations formation selected ;
+		PrintMessageVar formation_Selected: STR formation ;
+	endif
+	
+endif
+
+/* Setting Up Ships */
+if fleetSHPNum > 0	
+	
+	if createSort == 1 /* Planetary Assault Ships */
+		PrintErrorMessageVar ADDDED_AMOUNT_OF_SHIPS: INT fleetSHPNum ;
+		math cqSpawnedShipNum = cqCurrentShipNum + fleetSHPNum ;
+		globalVar $cqPlanetSpawnedShipNum = cqSpawnedShipNum ;
+		globalVar $cqPlanetCurrentShipNum = cqSpawnedShipNum ;
+		PrintErrorMessageVar Updated_cqSpawnedShipNum: INT cqSpawnedShipNum ;
+		globalVar $cqPlanetBlockRespawn = 0 ;
+		PrintMessageGlobalVar cqPlanetBlockRespawnAfterReset: $cqPlanetBlockRespawn ;
+	endif
+	
+	if createSort == 2 /* Planetary Assault Ships vs Platform */
+		PrintErrorMessageVar ADDDED_AMOUNT_OF_SHIPS: INT fleetSHPNum ;
+		math cqSpawnedShipNum = cqCurrentShipNum + fleetSHPNum ;
+		globalVar $cqPlanetSpawnedShipNum = cqSpawnedShipNum ;
+		globalVar $cqPlanetCurrentShipNum = cqSpawnedShipNum ;
+		PrintErrorMessageVar Updated_cqSpawnedShipNum: INT cqSpawnedShipNum ;
+		globalVar $cqPlanetBlockRespawn = 0 ;
+		PrintMessageGlobalVar cqPlanetBlockRespawnAfterReset: $cqPlanetBlockRespawn ;
+	endif
+	
+	/*
+	if faction != playerFaction 
+		math cqSpawnedShipNum = cqCurrentShipNum + fleetSHPNum ;
+		globalVar $cqPlanetSpawnedShipNum = cqSpawnedShipNum ;
+		globalVar $cqPlanetCurrentShipNum = cqSpawnedShipNum ;
+		PrintMessageVar Updated_cqSpawnedShipNum: INT cqSpawnedShipNum ;
+	endif	
+	*/
+	
+	fleet GetByKeyName fleetKN Exist exist ;
+	if exist == 0
+		fleet Create fleetKN ;
+	
+		math counter = counter + 1 ;
+		if counter > 1000
+			counter = 0 ;
+		endif
+		globalVar $cqFleetCounter = counter ;
+		
+		fleetVirtual GetParent LinkParentFleetVirtual fleetKN ;
+		fleetVirtual GetParent GetPosition fleetPos ;
+		fleetVirtual GetParent GetDestination fleetDest ;
+		
+		string shipKN add fleetKN shipKN ;
+		
+		for fleetSHPId = 0 < fleetSHPNum step 1
+			fleetVirtual GetParent GetShipTempKeyName fleetSHPId shipBaseKN ;
+			fleetVirtual GetParent GetShipWarmasterKeyName fleetSHPId wrmKN ;
+			
+			string shipKNFinal add shipKN shipCounter ;
+			math shipCounter = shipCounter + 1 ;
+			
+			ship CreateFromTemp shipBaseKN shipKNFinal ;
+			if createSort == 1 /* planetary assault */
+				ship GetByKeyName shipKNFinal CreatePreScript OnDestroy scriptSHPDestroy ;
+			endif
+			if createSort == 2 /* planetary assault */
+				ship GetByKeyName shipKNFinal CreatePreScript OnDestroy scriptSHPDestroy ;
+				ship GetByKeyName shipKNFinal SetCurrentEnemyPlatform planetKN ;
+			endif
+			if createSort == 3 /* MATEJ - MQ06 */
+				/* link ondestroy fleet skriptu ili stovec 
+				PrintErrorMessageVar fleetKN: STR fleetKN ;
+				PrintErrorMessageVar shipKN: STR shipKN ; */
+				globalVar $MQFleetCreatedName = fleetKN ;
+			endif
+			ship GetByKeyName shipKNFinal SetPermanent 1 ;
+			ship GetByKeyName shipKNFinal GetLevel shipLevel ;
+			
+			if wrmKN != NONE
+				ship GetByKeyName shipKNFinal SetWarmasterKeyName wrmKN ;
+				ship GetByKeyName shipKNFinal SetName RND ;
+				shipLevel = 0 ;
+				ship GetByKeyName shipKNFinal GetWarmasterLevel shipLevel ;
+					PrintMessageVar shipKNFinal_IS_WARMASTER STR shipKNFinal ;
+					PrintMessageVar shipLevel_IS_WARMASTER INT shipLevel ;
+				array Add warmasters shipKNFinal ;
+				wrmKN = NONE ;
+			endif
+			
+			/* THE FORCE UNLEASHED - Custom EquipShip script v2.0 */
+			/* Array 0 - Left / 1 - Right / 2 - Front / 3 - Back */
+
+			 int maxHull = 0.0 ; 
+			 int customShip = 0 ;
+
+			 int l_battery = 0 ;
+
+			 int tempLeftNum = 0 ;
+			 int tempRightNum = 0 ;
+			 int tempFrontNum = 0 ;
+			 int tempBackNum = 0 ;
+
+			 array str weaponTypes ;
+			 array Add weaponTypes SWHTL SWHTL SWHTL SWHTL ;
+
+			 ship GetByKeyName shipKNFinal GetHPMax maxHull ;
+
+		 	if maxHull == 2801
+		 		PrintMessage __________ ;
+				PrintMessage Found_Fractal_Intersector__Modifying_Turrets ;
+
+				tempLeftNum = 2 ;
+				tempRightNum = 4 ;
+				tempFrontNum = 0 ;
+				tempBackNum = 0 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWLTL SWFL SWFL SWFL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 25001
+		 		PrintMessage __________ ;
+				PrintMessage Found_Fractal_Fulgor__Modifying_Turrets ;
+
+				tempLeftNum = 2 ;
+				tempRightNum = 2 ;
+				tempFrontNum = 5 ;
+				tempBackNum = 5 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWSBIC SWSBQTL SWLTL SWLTL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 4401
+		 		PrintMessage __________ ;
+				PrintMessage Found_Fractal_Indictor__Modifying_Turrets ;
+
+				tempLeftNum = 3 ;
+				tempRightNum = 0 ;
+				tempFrontNum = 0 ;
+				tempBackNum = 0 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWLTHL SWLTHL SWLTHL SWLTHL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 16001
+		 		PrintMessage __________ ;
+				PrintMessage Found_TFU_NebulonB__Modifying_Turrets ;
+
+				tempLeftNum = 3 ;
+				tempRightNum = 3 ;
+				tempFrontNum = 5 ;
+				tempBackNum = 5 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWMTL SWMTL SWLTHL SWLTL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 20001
+		 		PrintMessage __________ ;
+				PrintMessage Found_Fractal_Kontos__Modifying_Turrets ;
+
+				tempLeftNum = 9 ;
+				tempRightNum = 2 ;
+				tempFrontNum = 8 ;
+				tempBackNum = 5 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWQTL SWMTL SWLTL SWLTL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 50001
+		 		PrintMessage __________ ;
+				PrintMessage Found_Fractal_VSD__Modifying_Turrets ;
+
+				tempLeftNum = 9 ;
+				tempRightNum = 10 ;
+				tempFrontNum = 12 ;
+				tempBackNum = 9 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWHTL SWQTL SWLTL SWLTL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 85001
+		 		PrintMessage __________ ;
+				PrintMessage Found_Imperial_sd__Modifying_Turrets ;
+
+				tempLeftNum = 2 ;
+				tempRightNum = 6 ;
+				tempFrontNum = 10 ;
+				tempBackNum = 30 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWEHDIC SWEHDTL SWEMTTL SWLTL ;
+				customShip = 1 ;
+			endif
+
+			if maxHull == 250001
+		 		PrintMessage __________ ;
+				PrintMessage Found_TFU_TitanSB__Modifying_Turrets ;
+
+				tempLeftNum = 36 ;
+				tempRightNum = 8 ;
+				tempFrontNum = 6 ;
+				tempBackNum = 6 ;
+
+				array RemoveAll weaponTypes ;
+				array Add weaponTypes SWMTL TFL_S_SHTL TFL_SHTL TFL_SHTL ;
+				customShip = 1 ;
+			endif
+
+
+			if customShip == 1
+				PrintMessage CUSTOM_SHIP_FOUND____ADDING_TURRETS ;
+				l_battery = 0 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetTuretsNo l_battery tempLeftNum ;
+
+				l_battery = 1 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetTuretsNo l_battery tempRightNum ;
+
+				l_battery = 2 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetTuretsNo l_battery tempFrontNum ;
+
+				l_battery = 3 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetTuretsNo l_battery tempBackNum ;
+
+
+
+				array Get weaponTypes tempWeaponType 0 ;
+				l_battery = 0 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+				array Get weaponTypes tempWeaponType 1 ;
+				l_battery = 1 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+				array Get weaponTypes tempWeaponType 2 ;
+				l_battery = 2 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+				array Get weaponTypes tempWeaponType 3 ;
+				l_battery = 3 ;
+				ship GetByKeyName shipKNFinal GetWeaponsBattery SetWeapons l_battery tempWeaponType ;
+
+				customShip = 0 ;
+			endif
+
+
+			
+			globalVar $fleetShipKeyName = shipKNFinal ;
+			globalVar $ShipLevelOverride = shipLevel ;
+			script Data\Scripts\Global\FleetSpawn\EquipShipFighterWings.sal ;
+			fleet GetByKeyName fleetKN ShipAdd shipKNFinal ;
+			
+		endfor
+		
+		/* Fleet Stuff */
+
+		fleet GetByKeyName fleetKN SetFaction faction ;
+		ship GetPlayer GetFaction factionPlayer ;
+		if faction != factionPlayer && align >= 2
+			fleet GetByKeyName fleetKN SetCapturable 1 ;
+		else
+			fleet GetByKeyName fleetKN SetCapturable 0 ;
+		endif				
+		fleet GetByKeyName fleetKN SetMark 1 ;
+		fleet GetByKeyName fleetKN SetAIShipStatus 2 ; /* potrebno zbog DefendArea - radi jedino na AIShipStatus2 */
+		if createSort == 1 /* Planetary Assault Ships */
+			fleet GetByKeyName fleetKN SetCapturable 0 ;
+		endif
+		if createSort == 2 /* Planetary Assault Ships */
+			fleet GetByKeyName fleetKN SetCapturable 0 ;
+		endif
+		fleet GetByKeyName fleetKN SetBoardable 0 ;
+		fleet GetByKeyName fleetKN SetProfession Military ;
+		fleet GetByKeyName fleetKN SetFormation formation ;
+		fleet GetByKeyName fleetKN SetDensity 0.5 ; 
+		fleet GetByKeyName fleetKN InstantReposition fleetPos fleetDest ;
+		/* fleet GetByKeyName fleetKN CreateScript OnHail scriptPath ; */
+		
+		int numWar = 0 ;
+		array GetElementNum warmasters numWar ;
+		PrintMessageVar numWar: INT numWar ;
+		if numWar > 0
+			math numWar = numWar - 1 ;
+			for warId = 0 <= numWar step 1
+				PrintMessageVar warId: INT warId ;
+				array Get warmasters warmasterKN warId ;
+				ship GetByKeyName warmasterKN LoadAIBehaviour ;
+				ship GetByKeyName warmasterKN SetCapturable 0 ;
+			endfor
+		endif
+		
+		if align == 2
+			fleet GetByKeyName fleetKN SetMissionTask 0 ;
+		endif
+	else
+		PrintErrorMessageVar ERROR_SCRIPT:SpawnFleetFromTrigger.sal_fleetKN_alreadyExist: STR fleetKN ;
+	endif
+endif
+
+/* Setting Up Platforms */
+if fleetPLANum > 0	
+	
+	string plaKN add fleetKN plaKN ;
+	
+	float3 posPLA = 0.0 0.0 0.0 ;
+	
+	math counter = counter + 1 ;
+	if counter > 1000
+		counter = 0 ;
+	endif
+	globalVar $cqFleetCounter = counter ;
+	
+	if createSort == 1
+		math cqCurrentPlaNum = cqCurrentPlaNum + 1 ;
+		globalVar $cqPlanetCurrentPlaNum = cqCurrentPlaNum ;
+	endif
+	
+	for fleetPLAId = 0 < fleetPLANum step 1
+		fleetVirtual GetParent GetPlatformTempKeyName fleetPLAId plaBaseKN ;
+		fleetVirtual GetParent GetPlatformPosition fleetPLAId posPLA ;
+		
+		PrintMessageVar FLEETPLA_: INT fleetPLAId ;
+		PrintMessageVar POS: FLOAT3 posPLA ;
+		
+		string plaKNFinal add plaKN plaCounter ;
+		math plaCounter = plaCounter + 1 ;
+		
+		platform CreateFromTemp plaBaseKN plaKNFinal posPLA ;
+		platform GetByKeyName plaKNFinal SetEnabled 1 ;
+		if createSort == 1 /* planetary assault */
+			platform GetByKeyName plaKNFinal CreatePreScript OnDestroy scriptPLADestroy ;
+		endif
+		platform GetByKeyName plaKNFinal SetPermanent 1 ;
+	
+		platform GetByKeyName plaKNFinal SetFaction faction ;		
+		platform GetByKeyName plaKNFinal SetBoardable 0 ;						
+		
+		if align == 2
+			platform GetByKeyName plaKNFinal SetMark 1 ;		
+			platform GetByKeyName plaKNFinal SetMissionTask 0 ;
+		endif
+		
+		fleetVirtual GetParent ParentFleetVirtualLinkPlatform plaKNFinal ;
+		
+	endfor		
+	
+endif
+
+game ResetShipEnemyList 1 ;
+
+PrintMessageVar END: STR name ;
+
+End

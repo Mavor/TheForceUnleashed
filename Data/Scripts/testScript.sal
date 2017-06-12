@@ -1,4 +1,4 @@
-int credits = 50000000
-player AddCredits credits ;
-
+/* Give player 100,000 Credits */
+int creds = 100000000 ;
+player AddCredits creds ;
 End

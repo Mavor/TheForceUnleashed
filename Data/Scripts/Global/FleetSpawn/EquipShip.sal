@@ -447,6 +447,20 @@ int imax ;
 		customShip = 1 ;
 	endif
 
+	if maxHull == 16001
+ 		PrintMessage __________ ;
+		PrintMessage Found_TFU_NebulonB__Modifying_Turrets ;
+
+		tempLeftNum = 3 ;
+		tempRightNum = 3 ;
+		tempFrontNum = 5 ;
+		tempBackNum = 5 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWMTL SWMTL SWLTHL SWLTL ;
+		customShip = 1 ;
+	endif
+
 	if maxHull == 20001
  		PrintMessage __________ ;
 		PrintMessage Found_Fractal_Kontos__Modifying_Turrets ;
@@ -472,6 +486,20 @@ int imax ;
 
 		array RemoveAll weaponTypes ;
 		array Add weaponTypes SWHTL SWQTL SWLTL SWLTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 85001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Imperial_sd__Modifying_Turrets ;
+
+		tempLeftNum = 2 ;
+		tempRightNum = 6 ;
+		tempFrontNum = 10 ;
+		tempBackNum = 30 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWEHDIC SWEHDTL SWEMTTL SWLTL ;
 		customShip = 1 ;
 	endif
 

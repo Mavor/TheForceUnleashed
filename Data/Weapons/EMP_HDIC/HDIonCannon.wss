@@ -1,0 +1,31 @@
+Sort:	1
+Lenght:	15.0
+Speed:	450
+BeamFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\EMP_HDIC\HDIonCannonBeam.par
+
+
+
+Particle:
+{
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\EMP_HDIC\HDIonCannonSparcles.par
+	ParticleSort:	1
+	ParticleTimer:	1.3
+}
+Particle:
+{
+	ParticleFileName:	Mods\SW_WarlordsofGemini\Data\Weapons\EMP_HDIC\HDIonCannon.par
+	ParticleSort:	5
+	ParticleTimer:	0.1
+}
+
+
+CentralY:	0
+Duration:	1.0
+
+Sound:
+{
+	Shot:	Ioncannon1A
+	Shot:	Ioncannon1B
+	Shot:	Ioncannon1C
+	
+}
