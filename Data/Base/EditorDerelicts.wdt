@@ -1,4 +1,10 @@
 Colum:	6				
 Id	KeyName	Name	File	IconFile	IconId
 1001	EMTITAN	EMTITAN	Mods\TheForceUnleashed\Data\Models\Derelicts\em_Titan\wreck.der	Data\Textures\GUI\derelicts.dds 0
-1001	EMNEBULONB	EMNEBULONB	Mods\TheForceUnleashed\Data\Models\Derelicts\em_NebulonB\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1002	EMNEBULONB	EMNEBULONB	Mods\TheForceUnleashed\Data\Models\Derelicts\em_NebulonB\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1003	EMBELLATOR	EMBELLATOR	Mods\TheForceUnleashed\Data\Models\Derelicts\em_bellator\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1004	EMCR90	EMCR90	Mods\TheForceUnleashed\Data\Models\Derelicts\em_cr90\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1005	EMDOMINANCESSD	EMDOMINANCESSD	Mods\TheForceUnleashed\Data\Models\Derelicts\em_dominanceSSD\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1006	EMEXECUTORSSD	EMEXECUTORSSD	Mods\TheForceUnleashed\Data\Models\Derelicts\em_executorSSD\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1007	EMPREDATORSD	EMPREDATORSD	Mods\TheForceUnleashed\Data\Models\Derelicts\em_predatorSD\wreck.der	Data\Textures\GUI\derelicts.dds 0
+1008	EMWARHAMMERSBC	EMWARHAMMERSBC	Mods\TheForceUnleashed\Data\Models\Derelicts\em_warhammerSBC\wreck.der	Data\Textures\GUI\derelicts.dds 0

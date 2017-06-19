@@ -1,0 +1,216 @@
+txt:	
+FrustumRadius:	110.50
+Mobility:	0
+Mass:	1.00
+Hittable:	0
+HitSphereDistance:	1000.00
+HitModelDistance:	1000.00
+AABBUse:	0
+AABBCenter:	0.00	0.00	0.00
+AABBSize:	1.00	1.00	1.00
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\bridge.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\center_hull.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\central_bits.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\fins.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\primary_hull.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\thrusters.mdl
+	Position:	0.00	0.00	0.00
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	200000.00
+	DrawDistance:	100000.00
+	AditionalSort:	DEFAULT
+	Scale:	1.00	1.00	1.00
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	3.42	-4.28	-66.86
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	16.50	16.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	17.49	-6.32	-66.12
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	16.50	16.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	10.60	-3.62	-62.73
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	10.43	-9.44	-62.71
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	3.02	-10.43	-62.96
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	-3.42	-4.28	-66.86
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	16.50	16.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	-17.49	-6.32	-66.12
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	16.50	16.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	-10.60	-3.62	-62.73
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	-10.43	-9.44	-62.71
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}	
+StaticMesh:	
+{	
+	Instanced:	0
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\Thruster_Round.mdl
+	Position:	-3.02	-10.43	-62.96
+	Rotation:	0.00	0.00	0.00
+	AngularVelocity:	0.00	0.00	0.00
+	StreamDistance:	2500.00
+	DrawDistance:	2050.00
+	AditionalSort:	THRUST
+	Scale:	9.50	9.50	0.50
+}		
+CollisionMesh:	
+{	
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\collision.mdl
+}	
+ConvexCollisionMeshes:	
+{	
+	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\collision.mdl
+}	
+Waypoints:	
+{	
+	DroneSpawnPosition:	0.00	0.00	0.00
+	DroneScale:	1.00
+	DataFile:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\em_predatorSD.mg
+}	

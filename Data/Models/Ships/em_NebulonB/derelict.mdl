@@ -4,13 +4,13 @@ Material:
 		Shader:	XYZNTUV	data\shaders\pbr\spg_pbr_shader.fx
 		Texture:
 		{
-			Name:	whaledata\textures\missing.dds
+			Name:	mods\TheForceUnleashed\data\models\ships\derelict_diff.dds
 			Slot:	0
 			Type:	FromFile
 		}
 		Texture:
 		{
-			Name:	whaledata\textures\missing.dds
+			Name:	mods\TheForceUnleashed\data\models\ships\derelict_spec.dds
 			Slot:	1
 			Type:	FromFile
 		}
