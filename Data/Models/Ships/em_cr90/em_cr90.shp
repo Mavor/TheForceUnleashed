@@ -1,21 +1,21 @@
 txt	
 ShipModel:	
 {	
-		Name:	Mods\TheForceUnleashed\Data\Models\Ships\em_NebulonB\em_NebulonB.asb
+		Name:	Mods\TheForceUnleashed\Data\Models\Ships\em_cr90\em_cr90.asb
 }	
 ShipBase:	
 {	
-		Name:	Nebulon-B Frigate
-		Value:	4000000
-		Maneuver:	1.05
-		Hull:	16001.00
-		Cargo:	150
-		Crew:	65
-		Hangar:	1
+		Name:	Corellian Corvette
+		Value:	1100000
+		Maneuver:	1.15
+		Hull:	6501.00
+		Cargo:	100
+		Crew:	35
+		Hangar:	0
 		Cloak:	0
 		Descript:	1005
 		Soak:	0.05
-		Mass:	200.00
+		Mass:	120.00
 		AngularDamping:	0.00
 		Evasion:	0.05
 		LandingPoint:	0.00	-4.66	0.00
@@ -46,72 +46,19 @@ ShipTrails:
 }	
 ShipWeapons:	
 {	
-	WeaponsPower:	130.00
-	WeaponsPowerRefill:	6.00
+	WeaponsPower:	75.00
+	WeaponsPowerRefill:	5.00
 	WeaponsPowerDownTime:	3.00
 	WeaponBattery:	
 	{	
 		TurretSlot:	
 		{	
-			Position:	-0.74	-1.07	5.48
-			Rotation:	0.00	0.00	1.64
+			Position:	-31.32	11.00	-93.34
+			Rotation:	0.05	0.00	0.20
 			Scale:	0
 			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.14
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	-0.53	-3.22	5.44
-			Rotation:	0.00	0.00	1.64
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.19
-			VerticalArcPlus:	3.00
-		}	
-		TurretSlot:	
-		{	
-			Position:	-0.33	-5.29	5.30
-			Rotation:	0.00	0.00	1.64
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.19
-			VerticalArcPlus:	3.00
-		}	
-	}	
-	WeaponBattery:	
-	{	
-		TurretSlot:	
-		{	
-			Position:	0.74	-1.07	5.48
-			Rotation:	0.00	0.00	-1.64
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.17
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.53	-3.22	5.44
-			Rotation:	0.00	0.00	-1.64
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.17
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.33	-5.29	5.30
-			Rotation:	0.00	0.00	-1.64
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.17
+			HorizontalArcPlus:	0.90
+			VerticalArcMinus:	0.02
 			VerticalArcPlus:	3.10
 		}	
 	}	
@@ -119,108 +66,41 @@ ShipWeapons:
 	{	
 		TurretSlot:	
 		{	
-			Position:	-1.01	1.34	-9.57
-			Rotation:	0.00	0.00	0.00
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.06
-			VerticalArcPlus:	2.90
-		}	
-		TurretSlot:	
-		{	
-			Position:	1.04	1.33	-9.36
-			Rotation:	0.00	0.00	0.00
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.06
-			VerticalArcPlus:	2.90
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.00	1.70	0.91
-			Rotation:	0.00	0.00	0.00
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	-0.14
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	-0.31	1.30	7.58
-			Rotation:	0.00	0.20	0.55
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.13
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.31	1.30	7.58
-			Rotation:	0.00	0.00	-0.55
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.13
-			VerticalArcPlus:	3.10
-		}	
-	}	
-	WeaponBattery:	
-	{	
-		TurretSlot:	
-		{	
-			Position:	0.39	0.02	9.29
-			Rotation:	0.00	-0.30	-2.25
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.14
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	-0.39	0.02	9.29
-			Rotation:	0.00	0.30	2.25
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.14
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.00	-5.85	5.40
-			Rotation:	0.00	0.00	-3.16
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	0.14
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.00	-0.46	0.56
-			Rotation:	0.10	0.00	-3.16
-			Scale:	0
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	-0.52
-			VerticalArcPlus:	3.10
-		}	
-		TurretSlot:	
-		{	
-			Position:	0.00	-1.59	-10.72
-			Rotation:	0.00	0.00	-3.16
-			Scale:	0
+			Position:	-48.09	0.61	-55.78
+			Rotation:	0.00	0.30	1.55
+			Scale:	2
 			HorizontalArcMinus:	3.10
 			HorizontalArcPlus:	3.10
 			VerticalArcMinus:	-0.02
 			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	0.00	7.20	121.31
+			Rotation:	0.00	0.00	0.00
+			Scale:	2
+			HorizontalArcMinus:	0.00
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.09
+			VerticalArcPlus:	3.10
 		}		
 	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	-25.47	13.92	-57.52
+			Rotation:	0.10	3.50	-0.30
+			Scale:	2
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	0.90
+			VerticalArcMinus:	0.02
+			VerticalArcPlus:	3.10
+		}	
+	}
 }	
 ShipHeavyWeapons:	
 {	
@@ -259,7 +139,7 @@ ShipHeavyWeapons:
 }	
 Propulsion:	
 {	
-	Hp:	1350.00
+	Hp:	1250.00
 	Firewall:	0.00
 	Speed:	60.00
 	Acceleration:	1.20
@@ -267,21 +147,21 @@ Propulsion:
 }	
 Sensors:	
 {	
-	Hp:	950.00
+	Hp:	850.00
 	Firewall:	0.00
 	SensorRadius:	2000.00
 	Detection:	0.10
 }	
 Grappler:	
 {	
-	Hp:	1050.00
+	Hp:	850.00
 	Firewall:	0.00
 	GrappleRange:	230.00
 	Overload:	0.00
 }	
 Transporter:	
 {	
-	Hp:	1050.00
+	Hp:	850.00
 	Firewall:	0.00
 	TransportRange:	1000.00
 	Capacity:	11.00
@@ -289,7 +169,7 @@ Transporter:
 }	
 Hangar:	
 {	
-	Hp:	1050.00
+	Hp:	850.00
 	Firewall:	0.00
 	PreLaunch:	30.00
 	Fuel:	90.00
@@ -297,22 +177,22 @@ Hangar:
 }	
 Cloak:	
 {	
-	Hp:	1050.00
+	Hp:	850.00
 	Firewall:	0.00
 	CloakStrength:	0.50
 	ClaokStability:	0.50
 }	
 ShipShields:	
 {	
-	Strength:	8000.00
+	Strength:	4100.00
 	Recharge:	35.00
 	Reboot:	5.00
-	HP:	1150.00
+	HP:	950.00
 	Firewall:	0.00
 	Biometric:	0.20
-	ResistanceEnergy:	0.30
-	ResistanceProjectile:	0.00
-	ResistancePlasma:	0.75
+	ResistanceEnergy:	0.25
+	ResistanceProjectile:	0.20
+	ResistancePlasma:	0.80
 	ResistanceRadiation:	0.20
 	ResistanceEMP:	0.15
 }	
@@ -324,7 +204,7 @@ ShipShieldsMesh:
 }	
 ShipDerelict:	
 {	
-	Derelict:	gunship1
+	Derelict:	EMCR90
 }	
 Events:	
 {	

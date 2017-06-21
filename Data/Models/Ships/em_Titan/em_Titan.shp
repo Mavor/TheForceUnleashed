@@ -712,7 +712,7 @@ ShipShields:
 	Biometric:	0.20
 	ResistanceEnergy:	80.00
 	ResistanceProjectile:	40.00
-	ResistancePlasma:	10.00
+	ResistancePlasma:	15.00
 	ResistanceRadiation:	0.20
 	ResistanceEMP:	0.15
 }	
