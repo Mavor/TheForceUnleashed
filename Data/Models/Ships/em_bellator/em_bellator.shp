@@ -60,9 +60,7 @@ ShipWeapons:
 			HorizontalArcPlus:	0.90
 			VerticalArcMinus:	0.02
 			VerticalArcPlus:	3.10
-<<<<<<< Updated upstream
-=======
-		}
+		}	
 		TurretSlot:	
 		{	
 			Position:	-31.32	11.00	-93.34
@@ -299,10 +297,7 @@ ShipWeapons:
 			HorizontalArcPlus:	3.10
 			VerticalArcMinus:	0.09
 			VerticalArcPlus:	3.10
-<<<<<<< Updated upstream
-		}		
-=======
-		}
+		}	
 		TurretSlot:	
 		{	
 			Position:	0.00	7.20	121.31
@@ -356,9 +351,7 @@ ShipWeapons:
 			HorizontalArcPlus:	0.90
 			VerticalArcMinus:	0.02
 			VerticalArcPlus:	3.10
-<<<<<<< Updated upstream
-=======
-		}
+		}	
 		TurretSlot:	
 		{	
 			Position:	-25.47	13.92	-57.52
@@ -502,3 +495,14 @@ MountedCamera:
 	VerticalOffset:	0.00
 	FrontCamPosition:	0.00	-1.00	-7.50
 }	
+
+<<<<<<< Updated upstream
+=======
+		}
+<<<<<<< Updated upstream
+		}		
+=======
+		}
+<<<<<<< Updated upstream
+=======
+		}
