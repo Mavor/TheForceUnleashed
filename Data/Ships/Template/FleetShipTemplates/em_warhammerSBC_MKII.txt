@@ -1,0 +1,71 @@
+txt
+Model:	EMWARHAMMERSBC
+Faction:	CONCORD
+Profession:	Security
+Level:	85
+Veteran:	0
+CustomBannersId:	0
+CustomColorBanners:	1.00	0.64	0.05	1.00
+CustomColorName:	1.00	0.64	0.05	1.00
+CustomFontName:	0
+CustomColorDecals:	1.00	0.64	0.05	1.00
+CustomPaintTint:	1.00	1.00	1.00	1.00
+CustomGlossiness:	1.00
+CustomReflection:	0.00
+CustomGlossinessSize:	0.50
+PrimaryWeapons:	
+{	
+	Battery:	
+	{	
+		Sort:	0
+		Turrets:	8
+		Weapon:	140
+	}	
+	Battery:	
+	{	
+		Sort:	1
+		Turrets:	8
+		Weapon:	140
+	}	
+	Battery:	
+	{	
+		Sort:	2
+		Turrets:	8
+		Weapon:	140
+	}	
+	Battery:	
+	{	
+		Sort:	3
+		Turrets:	24
+		Weapon:	140
+	}		
+}	
+SecundaryWeapons:	
+{	
+	Launcher:	
+	{	
+		Sort:	0
+		Weapon:	27
+		Ammo:	35
+	}		
+	Launcher:	
+	{	
+		Sort:	0
+		Weapon:	27
+		Ammo:	35
+	}		
+}	
+Hangar:	
+{		
+}
+Events:	
+{	
+		OnFriendFoeChange:	Data\Scripts\ShipDefault\OnFriendFoeChange.sal
+		OnDestroy:	Data\Scripts\ShipDefault\OnDestroy.sal
+		OnCriticalHit:	Data\Scripts\ShipDefault\OnCritical.sal
+		OnHP75:	Data\Scripts\ShipDefault\OnHP75.sal
+		OnHP50:	Data\Scripts\ShipDefault\OnHP50.sal
+		OnHP25:	Data\Scripts\ShipDefault\OnHP25.sal
+		OnHail:	Data\Scripts\ShipDefault\OnHail.sal
+		OnTransport:	Data\Scripts\ShipDefault\OnTransport.sal
+}		

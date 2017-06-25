@@ -163,7 +163,7 @@ StaticMesh:
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
 	Scale:	2.50	2.50	0.50
-}	
+}
 CollisionMesh:	
 {	
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_cr90\collision.mdl

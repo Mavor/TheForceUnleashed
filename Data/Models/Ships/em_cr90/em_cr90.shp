@@ -5,7 +5,7 @@ ShipModel:
 }	
 ShipBase:	
 {	
-		Name:	Corellian Corvette
+		Name:	CR90
 		Value:	1100000
 		Maneuver:	1.15
 		Hull:	6501.00
@@ -13,7 +13,7 @@ ShipBase:
 		Crew:	35
 		Hangar:	0
 		Cloak:	0
-		Descript:	1005
+		Descript:	FAC_unknown_TXT
 		Soak:	0.05
 		Mass:	120.00
 		AngularDamping:	0.00
@@ -53,82 +53,122 @@ ShipWeapons:
 	{	
 		TurretSlot:	
 		{	
-			Position:	-31.32	11.00	-93.34
-			Rotation:	0.05	0.00	0.20
+			Position:	-0.75	-0.01	2.05
+			Rotation:	0.05	0.00	0.35
 			Scale:	0
 			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	0.90
-			VerticalArcMinus:	0.02
-			VerticalArcPlus:	3.10
-		}	
-	}	
-	WeaponBattery:	
-	{	
-		TurretSlot:	
-		{	
-			Position:	-48.09	0.61	-55.78
-			Rotation:	0.00	0.30	1.55
-			Scale:	2
-			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	3.10
-			VerticalArcMinus:	-0.02
-			VerticalArcPlus:	3.10
-		}	
-	}	
-	WeaponBattery:	
-	{	
-		TurretSlot:	
-		{	
-			Position:	0.00	7.20	121.31
-			Rotation:	0.00	0.00	0.00
-			Scale:	2
-			HorizontalArcMinus:	0.00
 			HorizontalArcPlus:	3.10
 			VerticalArcMinus:	0.09
 			VerticalArcPlus:	3.10
-		}		
+		}	
+		TurretSlot:	
+		{	
+			Position:	-0.75	-0.03	1.18
+			Rotation:	0.05	0.00	0.35
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	-0.75	-0.50	2.05
+			Rotation:	0.05	0.00	2.86
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	-0.75	-0.50	1.18
+			Rotation:	0.05	0.00	2.86
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
 	}	
 	WeaponBattery:	
 	{	
 		TurretSlot:	
 		{	
-			Position:	-25.47	13.92	-57.52
-			Rotation:	0.10	3.50	-0.30
-			Scale:	2
+			Position:	0.75	-0.01	2.05
+			Rotation:	0.05	0.00	-0.35
+			Scale:	0
 			HorizontalArcMinus:	3.10
-			HorizontalArcPlus:	0.90
-			VerticalArcMinus:	0.02
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	0.75	-0.01	1.18
+			Rotation:	0.05	0.00	-0.35
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	0.75	-0.50	2.05
+			Rotation:	0.05	0.00	-2.86
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	-0.11
+			VerticalArcPlus:	2.90
+		}	
+		TurretSlot:	
+		{	
+			Position:	0.75	-0.50	1.18
+			Rotation:	0.05	0.00	-2.86
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.00
+			VerticalArcMinus:	0.04
+			VerticalArcPlus:	2.90
+		}	
+	}	
+	WeaponBattery:	
+	{	
+		TurretSlot:	
+		{	
+			Position:	0.00	0.55	2.91
+			Rotation:	0.20	0.00	0.00
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.09
 			VerticalArcPlus:	3.10
 		}	
-	}
+		TurretSlot:	
+		{	
+			Position:	-0.00	-0.93	2.91
+			Rotation:	-0.20	0.00	3.14
+			Scale:	0
+			HorizontalArcMinus:	3.10
+			HorizontalArcPlus:	3.10
+			VerticalArcMinus:	0.09
+			VerticalArcPlus:	3.10
+		}	
+	}	
+	WeaponBattery:	
+	{	
+	}	
 }	
 ShipHeavyWeapons:	
 {	
 	HeavyWeaponBattery:	
 	{	
-		Launcher:	
-		{	
-			Position:	-14.89	-0.34	-11.22
-			Rotation:	0.00	-1.40	0.00
-			HorizontalArcMinus:	0.70
-			HorizontalArcPlus:	0.70
-			VerticalArcMinus:	0.70
-			VerticalArcPlus:	0.70
-			Ammo:	30
-		}	
 	}	
 	HeavyWeaponBattery:	
 	{	
-		Launcher:	
-		{	
-			Position:	14.89	-0.34	-11.22
-			Rotation:	0.00	1.40	0.00
-			HorizontalArcMinus:	0.70
-			HorizontalArcPlus:	0.70
-			VerticalArcMinus:	0.70
-			VerticalArcPlus:	0.70
-			Ammo:	30
-		}	
 	}	
 	HeavyWeaponBattery:	
 	{	
@@ -199,12 +239,12 @@ ShipShields:
 ShipShieldsMesh:	
 {	
 	MeshName:	Data\Models\Sphere\ShipSphereShield7_2.mdl
-	Scale:	10.50	15.50	25.90
-	Position:	0.00	0.00	-1.00
+	Scale:	7.00	5.00	18.00
+	Position:	0.00	-0.30	-0.50
 }	
 ShipDerelict:	
 {	
-	Derelict:	EMCR90
+	Derelict:	gunship1
 }	
 Events:	
 {	

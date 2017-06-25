@@ -7,3 +7,27 @@ Ship:	EMNEBULONB
 {	
 	Producing: 	1
 }
+Ship:	EMBELLATOR
+{	
+	Producing: 	1
+}
+Ship:	EMCR90
+{	
+	Producing: 	1
+}
+Ship:	EMDOMINANCESSD
+{	
+	Producing: 	1
+}
+Ship:	EMEXECUTORSSD
+{	
+	Producing: 	1
+}
+Ship:	EMPREDATORSD
+{	
+	Producing: 	1
+}
+Ship:	EMWARHAMMERSBC
+{	
+	Producing: 	1
+}

@@ -199,7 +199,7 @@ StaticMesh:
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
 	Scale:	8.50	8.50	0.50
-}		
+}
 CollisionMesh:	
 {	
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_bellator\collision.mdl

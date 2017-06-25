@@ -1,5 +1,5 @@
 txt:	
-FrustumRadius:	750.50
+FrustumRadius:	650.50
 Mobility:	0
 Mass:	1.00
 Hittable:	0
@@ -54,7 +54,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -66,7 +66,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -78,7 +78,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 StaticMesh:	
 {	
@@ -90,7 +90,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -102,7 +102,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 StaticMesh:	
 {	
@@ -114,7 +114,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -126,7 +126,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 StaticMesh:	
 {	
@@ -138,7 +138,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -150,7 +150,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 StaticMesh:	
 {	
@@ -162,7 +162,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -174,7 +174,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 StaticMesh:	
 {	
@@ -186,7 +186,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	32.50	32.50	0.50
+	Scale:	32.50	32.50	0.40
 }	
 StaticMesh:	
 {	
@@ -198,7 +198,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	28.50	28.50	0.50
+	Scale:	28.50	28.50	0.40
 }	
 CollisionMesh:	
 {	

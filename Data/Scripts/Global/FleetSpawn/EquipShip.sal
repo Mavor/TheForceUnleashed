@@ -447,6 +447,20 @@ int imax ;
 		customShip = 1 ;
 	endif
 
+	if maxHull == 6501
+ 		PrintMessage __________ ;
+		PrintMessage Found_CR90__Modifying_Turrets ;
+
+		tempLeftNum = 4 ;
+		tempRightNum = 4 ;
+		tempFrontNum = 2 ;
+		tempBackNum = 0 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWLTL SWLTL SWMTL SWMTL ;
+		customShip = 1 ;
+	endif
+
 	if maxHull == 16001
  		PrintMessage __________ ;
 		PrintMessage Found_TFU_NebulonB__Modifying_Turrets ;
@@ -503,6 +517,20 @@ int imax ;
 		customShip = 1 ;
 	endif
 
+	if maxHull == 90001
+ 		PrintMessage __________ ;
+		PrintMessage Found_PredatorSD__Modifying_Turrets ;
+
+		tempLeftNum = 6 ;
+		tempRightNum = 6 ;
+		tempFrontNum = 5 ;
+		tempBackNum = 26 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWEHDTL SWEHDTL SWEHDTL SWLTL ;
+		customShip = 1 ;
+	endif
+
 	if maxHull == 250001
  		PrintMessage __________ ;
 		PrintMessage Found_TFU_TitanSB__Modifying_Turrets ;
@@ -514,6 +542,48 @@ int imax ;
 
 		array RemoveAll weaponTypes ;
 		array Add weaponTypes SWMTL TFL_S_SHTL TFL_SHTL TFL_SHTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 380001
+ 		PrintMessage __________ ;
+		PrintMessage Found_TFU_Bellator__Modifying_Turrets ;
+
+		tempLeftNum = 22 ;
+		tempRightNum = 22 ;
+		tempFrontNum = 12 ;
+		tempBackNum = 3 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWHTL SWHTL TFL_SHTL TFU_UHTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 780001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Dominance_SSD__Modifying_Turrets ;
+
+		tempLeftNum = 6 ;
+		tempRightNum = 6 ;
+		tempFrontNum = 16 ;
+		tempBackNum = 5 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes TFU_QUHTL TFU_QUHTL TFL_QSHTL TFU_QUHTL ;
+		customShip = 1 ;
+	endif
+
+	if maxHull == 1000001
+ 		PrintMessage __________ ;
+		PrintMessage Found_Executor_SSD__Modifying_Turrets ;
+
+		tempLeftNum = 36 ;
+		tempRightNum = 34 ;
+		tempFrontNum = 19 ;
+		tempBackNum = 19 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWEHDTL SWEHDTL TFL_SHTL TFL_SHTL ;
 		customShip = 1 ;
 	endif
 

@@ -14,3 +14,6 @@ Id	KeyName	Assembly	Sort
 1001	T1001	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_SHTL\TFL_SHTL.asb	2
 1002	T1002	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_QSHTL\TFL_QSHTL.asb	2
 1100	T1100	Mods\TheForceUnleashed\Data\Models\Turrets\TFL_S_SHTL\TFL_S_SHTL.asb	2
+1300	T1300	Mods\TheForceUnleashed\Data\Models\Turrets\TFU_HDTL_DARK\sw_Emp_HDTL.asb	2
+1301	T1301	Mods\TheForceUnleashed\Data\Models\Turrets\TFU_HTL_DARK\FracHTL.asb	2
+1302	T1302	Mods\TheForceUnleashed\Data\Models\Turrets\TFU_MTTL_DARK\sw_Emp_MTTL.asb	2

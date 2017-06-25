@@ -139,7 +139,7 @@ StaticMesh:
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
 	Scale:	9.50	9.50	0.50
-}
+}	
 StaticMesh:	
 {	
 	Instanced:	0
@@ -199,7 +199,7 @@ StaticMesh:
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
 	Scale:	9.50	9.50	0.50
-}		
+}	
 CollisionMesh:	
 {	
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_predatorSD\collision.mdl

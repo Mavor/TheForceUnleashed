@@ -1,5 +1,5 @@
 txt:	
-FrustumRadius:	640.50
+FrustumRadius:	540.50
 Mobility:	0
 Mass:	1.00
 Hittable:	0
@@ -132,7 +132,7 @@ StaticMesh:
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_dominanceSSD\primary_hull1.mdl
-	Position:	0.00	0.00	0.00
+	Position:	0.00	-0.80	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	200000.00
@@ -204,7 +204,7 @@ StaticMesh:
 {	
 	Instanced:	0
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_dominanceSSD\ultra_turret_mounts.mdl
-	Position:	0.00	0.00	0.00
+	Position:	0.00	-0.80	0.00
 	Rotation:	0.00	0.00	0.00
 	AngularVelocity:	0.00	0.00	0.00
 	StreamDistance:	200000.00
@@ -222,7 +222,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	62.50	62.50	0.50
+	Scale:	62.50	62.50	0.00
 }	
 StaticMesh:	
 {	
@@ -234,7 +234,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	47.50	47.50	0.50
+	Scale:	47.50	47.50	0.00
 }	
 StaticMesh:	
 {	
@@ -246,7 +246,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	47.50	47.50	0.50
+	Scale:	47.50	47.50	0.00
 }	
 StaticMesh:	
 {	
@@ -258,7 +258,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	19.50	19.50	0.50
+	Scale:	19.50	19.50	0.00
 }	
 StaticMesh:	
 {	
@@ -270,7 +270,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	19.50	19.50	0.50
+	Scale:	19.50	19.50	0.00
 }	
 StaticMesh:	
 {	
@@ -282,7 +282,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	62.50	62.50	0.50
+	Scale:	62.50	62.50	0.00
 }	
 StaticMesh:	
 {	
@@ -294,7 +294,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	47.50	47.50	0.50
+	Scale:	47.50	47.50	0.00
 }	
 StaticMesh:	
 {	
@@ -306,7 +306,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	47.50	47.50	0.50
+	Scale:	47.50	47.50	0.00
 }	
 StaticMesh:	
 {	
@@ -318,7 +318,7 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	19.50	19.50	0.50
+	Scale:	19.50	19.50	0.00
 }	
 StaticMesh:	
 {	
@@ -330,8 +330,8 @@ StaticMesh:
 	StreamDistance:	2500.00
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
-	Scale:	19.50	19.50	0.50
-}	
+	Scale:	19.50	19.50	0.00
+}
 CollisionMesh:	
 {	
 	MeshName:	Mods\TheForceUnleashed\Data\Models\Ships\em_dominanceSSD\collision.mdl

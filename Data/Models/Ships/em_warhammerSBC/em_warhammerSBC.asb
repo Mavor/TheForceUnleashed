@@ -235,7 +235,7 @@ StaticMesh:
 	DrawDistance:	2050.00
 	AditionalSort:	THRUST
 	Scale:	10.50	10.50	0.20
-}
+}	
 StaticMesh:	
 {	
 	Instanced:	0
