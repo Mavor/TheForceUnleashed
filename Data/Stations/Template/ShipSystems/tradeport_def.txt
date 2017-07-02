@@ -43,6 +43,14 @@ ShipSystem:	LIGHTWEAPONS	TFL_S_SHTL
 {
 	Producing:	4
 }
+ShipSystem:	LIGHTWEAPONS	TFU_UHTL
+{
+	Producing:	2
+}
+ShipSystem:	LIGHTWEAPONS	TFU_QUHTL
+{
+	Producing:	2
+}
 ShipSystem:	LIGHTWEAPONS	TFU_HDTL_DARK
 {
 	Producing:	4

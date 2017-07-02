@@ -531,6 +531,20 @@ int imax ;
 		customShip = 1 ;
 	endif
 
+	if maxHull == 100001
+ 		PrintMessage __________ ;
+		PrintMessage Found_ImpSD1__Modifying_Turrets ;
+
+		tempLeftNum = 2 ;
+		tempRightNum = 6 ;
+		tempFrontNum = 10 ;
+		tempBackNum = 30 ;
+
+		array RemoveAll weaponTypes ;
+		array Add weaponTypes SWEHDIC SWEHDTL SWEMTTL SWLTL ;
+		customShip = 1 ;
+	endif
+
 	if maxHull == 250001
  		PrintMessage __________ ;
 		PrintMessage Found_TFU_TitanSB__Modifying_Turrets ;

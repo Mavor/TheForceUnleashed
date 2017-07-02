@@ -39,6 +39,7 @@ Param:
 		GasYield:	0.0
 		MaterialYield:	0.0
 		ShipBuildingTimeReduction:	10.0
+		CreditsYield:	200000
 	}
 	Tier:
 	{
@@ -54,6 +55,7 @@ Param:
 		GasYield:	0.0
 		MaterialYield:	0.0
 		ShipBuildingTimeReduction:	20.0
+		CreditsYield:	300000
 	}
 	AmbientSound:
 	{

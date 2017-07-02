@@ -38,6 +38,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	305.0
 		MaterialYield:	0.0
+		CreditsYield:	100000
 	}
 	Tier:
 	{
@@ -52,6 +53,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	550.0
 		MaterialYield:	0.0
+		CreditsYield:	100000
 	}
 	Tier:
 	{
@@ -66,6 +68,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	825.0
 		MaterialYield:	0.0
+		CreditsYield:	100000
 	}
 	AmbientSound:
 	{

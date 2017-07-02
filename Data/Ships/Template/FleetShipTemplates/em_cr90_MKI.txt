@@ -19,13 +19,13 @@ PrimaryWeapons:
 	{	
 		Sort:	0
 		Turrets:	4
-		Weapon:	102
+		Weapon:	5
 	}	
 	Battery:	
 	{	
 		Sort:	1
 		Turrets:	4
-		Weapon:	102
+		Weapon:	5
 	}	
 	Battery:	
 	{	

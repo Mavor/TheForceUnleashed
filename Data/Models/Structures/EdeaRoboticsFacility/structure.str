@@ -38,6 +38,7 @@ Param:
 		OreYield:	0.0
 		GasYield:	0.0
 		MaterialYield:	0.0
+		CreditsYield:	300000
 		ShipBuildingTimeReduction:	120.0
 	}
 	AmbientSound:

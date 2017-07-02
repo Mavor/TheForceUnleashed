@@ -25,7 +25,7 @@ PrimaryWeapons:
 	{	
 		Sort:	0
 		Turrets:	8
-		Weapon:	140
+		Weapon:	5
 	}	
 	Battery:	
 	{	

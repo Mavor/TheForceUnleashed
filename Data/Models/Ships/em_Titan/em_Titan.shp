@@ -15,7 +15,7 @@ ShipBase:
 		Cloak:	0
 		Descript:	1005
 		Soak:	0.05
-		Mass:	520.00
+		Mass:	560.00
 		AngularDamping:	0.00
 		Evasion:	0.01
 		LandingPoint:	0.00	-5.00	24.45
