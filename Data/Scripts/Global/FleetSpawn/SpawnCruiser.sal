@@ -1,0 +1,113 @@
+str name = NONE ;
+game GetFileName name ;
+PrintMessageVar _*_START: STR name ;
+int randomNumber2 = 0 ;
+int numberMin2 = 1 ;
+int numberMax2 = 3 ;
+int disabler = 0 ;
+str faction = $fleetSpawnFaction ;
+str tempKeyName = default ;
+str keyName = $fleetShipKeyName ;
+
+if faction == OUTERLANDS
+	disabler = 1 ;
+	tempKeyName = FENRIR ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == SYNDICATE
+	disabler = 1 ;
+	tempKeyName = REKRA ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == KORKYRA
+	disabler = 1 ;
+	tempKeyName = HYDRA ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == BAELDOR
+	disabler = 2 ;
+	/* tempKeyName = default ;
+	ship CreateFromTemp tempKeyName keyName ; */
+endif
+if faction == GEMINI
+	disabler = 2 ;
+	/* tempKeyName = default ;
+	ship CreateFromTemp tempKeyName keyName ; */
+endif
+/* TFU Replace concord with empire ships */
+if faction == CONCORD
+	disabler = 1 ;
+	numberMin2 = 1 ;
+	numberMax2 = 2 ;
+	math randomNumber2 = Rnd numberMin2 numberMax2 ;
+
+	if randomNumber2 == 1
+		tempKeyName = FRACTALVSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if randomNumber2 == 2
+		tempKeyName = FRACTALVSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	/*
+	tempKeyName = ZODIAC ;
+	ship CreateFromTemp tempKeyName keyName ; */
+endif
+/* SPECIAL */
+if faction == RAIDERS
+	disabler = 1 ;
+	tempKeyName = EIRAS ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif /* SPECIAL */
+if faction == NYX
+	disabler = 1 ;
+	tempKeyName = NIBIRU ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif /*
+if faction == TRINITY
+	disabler = 2 ;
+	tempKeyName = default ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif */
+if disabler == 0
+	disabler = 1 ;
+	/* NUMBER OF INDEPENDANT TYPES OF THIS CLASS SHIPS */
+	numberMin2 = 1 ;
+	numberMax2 = 3 ;
+	math randomNumber2 = Rnd numberMin2 numberMax2 ;
+	if randomNumber2 == 1
+		tempKeyName = MOGUL_A ;
+	endif
+	if randomNumber2 == 2
+		tempKeyName = MOGUL_B ;
+	endif
+	if randomNumber2 == 3
+		tempKeyName = OSAKA ;
+	endif
+	ship CreateFromTemp tempKeyName keyName ;
+	/* numberMin2 = 1 ;
+	numberMax2 = 3 ;
+	math randomNumber2 = Rnd numberMin2 numberMax2 ;
+	
+	if randomNumber2 == 1
+		tempKeyName = SARATOGA ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if randomNumber2 == 2
+		tempKeyName = ADEPT ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if randomNumber2 == 3
+		tempKeyName = BISHOP ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif */
+endif
+
+if disabler != 2
+	ship GetByKeyName keyName SetEnabled 0 ;
+	script Data\Scripts\Global\FleetSpawn\EquipShip.sal ;
+endif
+
+globalVar $fleetSpawnDisabler = disabler ;
+PrintMessageVar END: STR name ;
+End

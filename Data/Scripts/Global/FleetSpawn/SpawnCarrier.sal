@@ -1,0 +1,113 @@
+str name = NONE ;
+game GetFileName name ;
+PrintMessageVar _*_START: STR name ;
+int randomNumber2 = 0 ;
+int numberMin2 = 1 ;
+int numberMax2 = 3 ;
+int disabler = 0 ;
+str faction = $fleetSpawnFaction ;
+str tempKeyName = default ;
+str keyName = $fleetShipKeyName ;
+
+if faction == OUTERLANDS
+	disabler = 1 ;
+	tempKeyName = ASGARD ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == SYNDICATE
+	disabler = 1 ;
+	tempKeyName = VAKAL ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == KORKYRA
+	disabler = 1 ;
+	tempKeyName = PREMONITION ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+if faction == BAELDOR
+	disabler = 1 ;
+	tempKeyName = TZAR ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif
+/* NO AVAILIBLE CARRIERS EXAMPLE - SPAWNS ONLY FACTION SHIPS FOR SPECIFIC FACTIONS */
+if faction == GEMINI
+	/* CHANGE DISABLER TO 2 TO SKIP SPAWNING RANDOM SHIPS FOR MAJOR FACTIONS */
+	disabler = 2 ;
+	/* tempKeyName = default ;
+	ship CreateFromTemp tempKeyName keyName ; */
+endif
+/* TFU - Replace concord with empire */
+if faction == CONCORD
+	disabler = 1 ;
+	math random = Rnd 1 100 ; 
+	if random > 0 && random <= 30
+		tempKeyName = IMPERIALSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 30 && random <= 40
+		tempKeyName = EMPREDATORSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 40 && random <= 65
+		tempKeyName = EMTITAN ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 65 && random <= 80
+		tempKeyName = EMBELLATOR ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 80 && random <= 90
+		tempKeyName = EMWARHAMMERSBC ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 90 && random <= 96
+		tempKeyName = EMEXECUTORSSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if random > 96 && random <= 100
+		tempKeyName = EMDOMINANCESSD ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	/*
+	tempKeyName = BOREALIS ;
+	ship CreateFromTemp tempKeyName keyName ;*/
+endif
+if faction == NYX
+	disabler = 2 ;
+endif /* 
+if faction == TRINITY
+	disabler = 2 ;
+	tempKeyName = default ;
+	ship CreateFromTemp tempKeyName keyName ;
+endif  */
+if disabler == 0
+	disabler = 1 ;
+	tempKeyName = CAVALIER ;
+	ship CreateFromTemp tempKeyName keyName ;
+	/* NUMBER OF INDEPENDANT TYPES OF THIS CLASS SHIPS */
+	/* numberMin2 = 1 ;
+	numberMax2 = 3 ;
+	math randomNumber2 = Rnd numberMin2 numberMax2 ;
+	
+	if randomNumber2 == 1
+		tempKeyName = MEDIATOR ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if randomNumber2 == 2
+		tempKeyName = INTERSTELLAR ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif
+	if randomNumber2 == 3
+		tempKeyName = ORACLE ;
+		ship CreateFromTemp tempKeyName keyName ;
+	endif */
+endif
+
+if disabler != 2
+	ship GetByKeyName keyName SetEnabled 0 ;
+	script Data\Scripts\Global\FleetSpawn\EquipShip.sal ;
+endif
+
+globalVar $fleetSpawnDisabler = disabler ;
+PrintMessageVar END: STR name ;
+End
